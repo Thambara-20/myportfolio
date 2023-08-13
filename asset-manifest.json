@@ -1,15 +1,24 @@
 {
   "files": {
-    "main.css": "/a/static/css/main.073c9b0a.css",
-    "main.js": "/a/static/js/main.0b2cefec.js",
+    "main.css": "/a/static/css/main.c83175de.css",
+    "main.js": "/a/static/js/main.fdd9cae4.js",
     "static/js/787.28cb0dcd.chunk.js": "/a/static/js/787.28cb0dcd.chunk.js",
+    "static/media/food-delivery3.jpg": "/a/static/media/food-delivery3.8f0099d9367ffedefab4.jpg",
+    "static/media/Star-Points-2.jpg": "/a/static/media/Star-Points-2.b138ec31ce5e4ef0e6f0.jpg",
+    "static/media/student-849825_1280.jpg": "/a/static/media/student-849825_1280.4f1c3023535917e041e1.jpg",
+    "static/media/Star-points.jpg": "/a/static/media/Star-points.8e6d686e53726ffb8a44.jpg",
+    "static/media/Star-Points-3.jpg": "/a/static/media/Star-Points-3.aba919a8e248c5d6514c.jpg",
+    "static/media/food-delivery2.jpg": "/a/static/media/food-delivery2.d50f4bb096fd20a00bdc.jpg",
+    "static/media/food-delivery.jpg": "/a/static/media/food-delivery.d4a2ab7eeb0b641940ae.jpg",
+    "static/media/my2.jpg": "/a/static/media/my2.88cd8936dca0ba9a4478.jpg",
+    "static/media/mobile-application.avif": "/a/static/media/mobile-application.e2973b665c0cd05423b1.avif",
     "index.html": "/a/index.html",
-    "main.073c9b0a.css.map": "/a/static/css/main.073c9b0a.css.map",
-    "main.0b2cefec.js.map": "/a/static/js/main.0b2cefec.js.map",
+    "main.c83175de.css.map": "/a/static/css/main.c83175de.css.map",
+    "main.fdd9cae4.js.map": "/a/static/js/main.fdd9cae4.js.map",
     "787.28cb0dcd.chunk.js.map": "/a/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.0b2cefec.js"
+    "static/css/main.c83175de.css",
+    "static/js/main.fdd9cae4.js"
   ]
 }
