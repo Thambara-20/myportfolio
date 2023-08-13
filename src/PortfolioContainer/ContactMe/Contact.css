@@ -30,7 +30,7 @@
 
 .c-title {
   font-size: 60px;
-  width: 80%;
+  width: 60%;
 }
 
 .c-info-item {
@@ -38,7 +38,7 @@
   align-items: center;
   margin: 50px 0px;
   font-weight: 300;
-  width: 70%;
+  width: 100%;
 }
 
 .c-icon {
@@ -57,7 +57,7 @@ form {
 }
 
 input {
-  width: 60%;
+  width: 10%;
   height: 50px;
   border: none;
   border-bottom: 1px solid black;

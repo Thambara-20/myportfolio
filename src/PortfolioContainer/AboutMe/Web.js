@@ -1,5 +1,5 @@
-import React from 'react'
-import computer from  "../../assets/home/student-849825_1280.jpg"
+import React, { useContext } from 'react'
+import computer from "../../assets/home/student-849825_1280.jpg"
 import "./Aboutweb.css"
 
 // import Button from 'react-bootstrap/Button';
@@ -8,12 +8,13 @@ import "./Aboutweb.css"
 // import delivery_p1 from "../../assets/home/projects/food-delivery.jpg"
 // import delivery_p2 from "../../assets/home/projects/food-delivery2.jpg"
 // import delivery_p3 from "../../assets/home/projects/food-delivery3.jpg"
-
+import { ThemeContext } from '../Context';
 
 
 
 const Web = () => {
-
+    const theme = useContext(ThemeContext);
+    const darkMode = theme.state.darkMode;
   
     return (
         <div className="a">
@@ -26,8 +27,8 @@ const Web = () => {
 
                 <div className="main-img-wrapper">
                     
-                    <div className="img-wrapper"  style={{ backgroundColor:  'rgb(74, 72, 69)' }}>
-                        <div className="project-text"  >Food Delivery application(in progress)</div>
+                    <div className="img-wrapper"  style={{ backgroundColor:  darkMode ? 'rgb(74, 72, 69)':'rgb(239, 239, 239)' }}>
+                        <div className="project-text"  >Library management system(in progress)</div>
                         <div className="a-img-main">
                             <div className="a-img-wrapper">
                                 {/* <img src={delivery_p1} alt="" className="a-img" />

@@ -53,14 +53,13 @@ const Contact = () => {
             </div>
             <div className="c-info-item">
               <img className="c-icon" src={Address} alt="" />
-              -----------------------------------------
+              -----------------------------
             </div>
           </div>
         </div>
         <div className="c-right">
           <p className="c-desc">
-            <b>What’s your story?</b> Get in touch. Always available for
-            freelancing if the right project comes along. me.
+          
           </p>
           <form ref={formRef} onSubmit={handleSubmit}>
             <input style={{ backgroundColor: darkMode && "#333" }} type="text" placeholder="Name" name="user_name" />
@@ -75,8 +74,6 @@ const Contact = () => {
           </form>
         </div>
       </div>
-      {/* <script src="https://cdn.botpress.cloud/webchat/v0/inject.js"></script>
-<script src="https://mediafiles.botpress.cloud/0456e3c0-aeaa-45e1-8379-24e53eba66c1/webchat/config.js" defer></script> */}
     </div>
   );
 };
