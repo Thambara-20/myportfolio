@@ -15,19 +15,15 @@ export default function Profile() {
                             <MDBIcon fab icon='facebook-f' />
                         </MDBBtn>
 
-                        <MDBBtn className='m-1' style={{ backgroundColor: '#55acee' }} size='sm' href='#'>
+                        <MDBBtn className='m-1' style={{ backgroundColor: '#55acee' }} size='sm' href='https://twitter.com/ThambaraS'>
                             <MDBIcon fab icon='twitter' />
-                        </MDBBtn>
-
-                        <MDBBtn className='m-1' style={{ backgroundColor: '#dd4b39' }} size='sm' href='#'>
-                            <MDBIcon fab icon='google' />
                         </MDBBtn>
 
                         <MDBBtn className='m-1' style={{ backgroundColor: '#ac2bac' }} size='sm' href='#'>
                             <MDBIcon fab icon='instagram' />
                         </MDBBtn>
 
-                        <MDBBtn className='m-1' style={{ backgroundColor: '#0082ca' }} size='sm' href='#'>
+                        <MDBBtn className='m-1' style={{ backgroundColor: '#0082ca' }} size='sm' href=' https://www.linkedin.com/in/thambara-sahassaka-5573701b5'>
                             <MDBIcon fab icon='linkedin-in' ></MDBIcon>
                         </MDBBtn>
 
@@ -44,7 +40,7 @@ export default function Profile() {
                         <div className='tittle-wrapper'>
                             <div className='tittle-item'>Developer</div>
                             <div className='tittle-item'>Designer</div>
-                            <div className='tittle-item'>Software Engineer</div>
+                            <div className='tittle-item'>Computer Programmer</div>
 
                         </div>
                     </div>

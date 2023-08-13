@@ -2,6 +2,8 @@ import './App.css';
 import Toggle from './PortfolioContainer/Toggle/Toggle';
 import Profile from './PortfolioContainer/Home/Profile';
 import AboutMain from './PortfolioContainer/AboutMe/AboutMain';
+import ProjectList from './PortfolioContainer/HighLights/HighLights';
+import Contact from './PortfolioContainer/ContactMe/Contact';
 import { useContext} from 'react';
 import { ThemeContext } from './PortfolioContainer/Context';
 
@@ -18,7 +20,8 @@ function App() {
       <Toggle />
       <Profile />
       <AboutMain />
-   
+      <ProjectList />
+      <Contact />
      
     </div>
   );
