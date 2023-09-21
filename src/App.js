@@ -6,11 +6,18 @@ import ProjectList from './PortfolioContainer/HighLights/HighLights';
 import Contact from './PortfolioContainer/ContactMe/Contact';
 import { useContext} from 'react';
 import { ThemeContext } from './PortfolioContainer/Context';
-
+import AOS from 'aos';
+import { useEffect } from 'react';
 function App() {
+
   const theme = useContext(ThemeContext);
   const darkMode = theme.state.darkMode;
- 
+  useEffect(() => {
+    AOS.init({
+      duration: 2000,
+    });
+  }, []);
+  
 
   return (
     <div className="App" style={{

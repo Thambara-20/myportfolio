@@ -67,8 +67,7 @@
 .main-img-wrapper{
     display: flex;
     justify-content: space-evenly;
-    height: 100%;
-    width: 100%;
+
     align-items: center;
    text-align: center;
    
@@ -100,7 +99,7 @@
     display: flex;
    
 
-    width:200px;
+    width:400px;
     height:450px;
     overflow: hidden;
     align-items: center;

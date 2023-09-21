@@ -11,3 +11,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.custom-badge {
+  background-color: red !important; /* Change background color to red */
+  color: white; /* Change text color to white */
+  font-size: 1.5rem;
+  padding: 5; /* Increase font size (adjust the value as needed) */
+  /* You can add more custom styles here */
+}

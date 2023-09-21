@@ -1,58 +1,76 @@
-import "./About.css"
-import mobile from "../../assets/home/mobile-application.avif"
-import Button from 'react-bootstrap/Button';
-import React, { useContext } from 'react'
-import strpoints_p1 from "../../assets/home/projects/Star-points.jpg"
-import strpoints_p2 from "../../assets/home/projects/Star-Points-2.jpg"
-import strpoints_p3 from "../../assets/home/projects/Star-Points-3.jpg"
-// import delivery_p1 from "../../assets/home/projects/food-delivery.jpg"
-// import delivery_p2 from "../../assets/home/projects/food-delivery2.jpg"
-// import delivery_p3 from "../../assets/home/projects/food-delivery3.jpg"
-import { ThemeContext } from "../Context";
+import "./Mobile.css"
+// import mobile from "../../assets/home/mobile-application.avif"
+// import Button from 'react-bootstrap/Button';
+import React from 'react'
+import strpoints_p1 from "../../assets/home/student-849825_1280.jpg"
+// import strpoints_p2 from "../../assets/home/projects/Star-Points-2.jpg"
+// import strpoints_p3 from "../../assets/home/projects/Star-Points-3.jpg"
+import Chip from '@mui/material/Chip';
 
-const About = () => {
-    const theme = useContext(ThemeContext);
-    const darkMode = theme.state.darkMode;
+
+
+const Mobile = () => {
   
+
     return (
         <div>
             <div className="a">
-                <div className="a-left">
-                    <div className="a-card bg"></div>
-                    <div className="a-card">  <img src={mobile} alt="" className="a-mobile-img" /></div>
-                </div>
-                <div className="a-right">
-                    <p className="a-sub">    <h4 style={{ color: 'green' }}>My mobile apps developping projects</h4></p>
-
-                    <div className="main-img-wrapper">
-                        <div className="img-wrapper"  style={{ backgroundColor:  darkMode ? 'rgb(74, 72, 69)':'rgb(239, 239, 239)' }}>
-                            <div className="project-text"> Star Points radeem application(in progress)</div>
-                            <div className="a-img-main">
-                                <div className="a-img-wrapper">
-                                    <img src={strpoints_p1} alt="" className="a-img" />
-                                    <img src={strpoints_p2} alt="" className="a-img" />
-                                    <img src={strpoints_p3} alt="" className="a-img" />
-                                </div>
-                            </div>
-                            <div style={{ marginTop: '10px' }}> <Button style={{ width: '75px', height: '30px' }} href='https://github.com/Thambara-20/star_points_radeem'>Git</Button> </div>
+                <div className="main-image-wrapper" data-aos='fade-up'>
+                    <div className="image-wrapper" >
+                        <div className="image-main">
+                            <img src={strpoints_p1} alt="" className="img-item" />
                         </div>
-                        <div className="img-wrapper" style={{ backgroundColor:  darkMode ? 'rgb(74, 72, 69)':'rgb(239, 239, 239)' }}>
-                            <div className="project-text"  >Food Delivery application(in progress)</div>
-                            <div className="a-img-main">
-                                <div className="a-img-wrapper">
-                                    {/* <img src={delivery_p1} alt="" className="a-img" />
-                                    <img src={delivery_p2} alt="" className="a-img" />
-                                    <img src={delivery_p3} alt="" className="a-img" /> */}
-                                </div>
-                            </div>
-                            <div style={{ marginTop: '10px' }}>     <Button style={{ width: '75px', height: '30px' }} href='https://github.com/Thambara-20/star_points_radeem'>Git</Button></div>
+                        <div style={{ display: 'flex', width: '100%', alignItems: 'center', justifyContent: 'center' }}>
+                            <Chip label="Flutter" color="secondary" style={{ marginRight: '8px' }} />
+                            <Chip label="Dart" color="secondary" style={{ marginRight: '8px' }} />
+                            <Chip label="FireBase" color="primary" />
+                        </div>
+                        <div className="project-textline">Health Pro Simple Application (in progress)</div>
+                        <div className="intro-box">
+                            <p>With a user-friendly interface and a wide range of features, Health Pro allows you to access a library of exercises, and calculate your health status using some indicators</p>
+                            <p>Start your journey to a healthier you today with Health Pro Simple Application</p>
                         </div>
                     </div>
-                
+                    <div className="image-wrapper" >
+                        <div className="image-main">
+                            <img src={strpoints_p1} alt="" className="img-item" />
+                        </div>
+                        <div style={{ display: 'flex', width: '100%', alignItems: 'center', justifyContent: 'center' }}>
+                            <Chip label="Flutter" color="secondary" style={{ marginRight: '8px' }} />
+                            <Chip label="Dart" color="secondary" style={{ marginRight: '8px' }} />
+                            <Chip label="FireBase" color="primary" />
+                        </div>
+                        <div className="project-textline">Star Points Radeem Application (in progress)</div>
+                        <div className="intro-box">
+                            <p>a cutting-edge project currently in progress. This innovative application is
+                                designed to revolutionize the way you redeem your hard-earned rewards and
+                                benefits. Whether you've been accumulating points through loyalty programs,
+                                credit card rewards, or other incentives, our application is your key to
+                                unlocking a world of exciting possibilities. With an intuitive interface and seamless
+                                functionality, the Application empowers you to effortlessly redeem your accumulated rewards for a wide range of offerings</p>
+                        </div>
+                    </div>
+                    <div className="image-wrapper" >
+                        <div className="image-main">
+                            <img src={strpoints_p1} alt="" className="img-item" />
+                        </div>
+                        <div style={{ display: 'flex', width: '100%', alignItems: 'center', justifyContent: 'center' }}>
+                            <Chip label="Flutter" color="secondary" style={{ marginRight: '8px' }} />
+                            <Chip label="Dart" color="secondary" style={{ marginRight: '8px' }} />
+                            <Chip label="FireBase" color="primary" />
+                        </div>
+                        <div className="project-textline">Talk Together (in progress)</div>
+                        <div className="intro-box">
+                            <p>This Application is designed to facilitate communication between individuals who speak different languages.
+                                 Its primary purpose is to break down language barriers
+                                 and enable users to have meaningful conversations regardless of their native languages. </p>
+                        </div>
+                    </div>
                 </div>
             </div>
+
         </div>
     )
 }
 
-export default About
+export default Mobile
