@@ -66,6 +66,22 @@ const Mobile = () => {
                                  and enable users to have meaningful conversations regardless of their native languages. </p>
                         </div>
                     </div>
+                    <div className="image-wrapper" >
+                        <div className="image-main">
+                            <img src={strpoints_p1} alt="" className="img-item" />
+                        </div>
+                        <div style={{ display: 'flex', width: '100%', alignItems: 'center', justifyContent: 'center' }}>
+                            <Chip label="Flutter" color="secondary" style={{ marginRight: '8px' }} />
+                            <Chip label="Dart" color="secondary" style={{ marginRight: '8px' }} />
+                            <Chip label="FireBase" color="primary" />
+                        </div>
+                        <div className="project-textline">Talk Together (in progress)</div>
+                        <div className="intro-box">
+                            <p>This Application is designed to facilitate communication between individuals who speak different languages.
+                                 Its primary purpose is to break down language barriers
+                                 and enable users to have meaningful conversations regardless of their native languages. </p>
+                        </div>
+                    </div>
                 </div>
             </div>
 

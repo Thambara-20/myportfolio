@@ -29,20 +29,20 @@
 .main-image-wrapper{
    
     display: flex;
-    width: 80%;
-    text-align: center;
+    width: 90%;
+  
     flex-wrap: wrap;
+    justify-content: center;
   
    
 }
 .image-wrapper{
-    flex:1;
     display: flex;
-    justify-content: flex-start;
     margin: 5px 5px 5px 5px;
-   
+    max-width: 400px;
     border-radius:15px 0px 15px 1px;
     align-items:center;
+  
     flex-direction:column;
  
 }
