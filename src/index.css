@@ -19,3 +19,38 @@ code {
   padding: 5; /* Increase font size (adjust the value as needed) */
   /* You can add more custom styles here */
 }
+.icon-android{
+  color: #000 !important;
+  position:absolute;
+  top:15px;
+  right:15px
+}
+
+.icon-web{
+  color:#000;
+  position:absolute;
+  top:15px;
+  right:15px 
+
+}
+
+.bottom-line-wrapper{
+  height: 2px;
+  margin-bottom:10px;
+  margin-top:20px;
+  display:flex;
+  background-color: #007bff;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  width:90%
+}
+.bottom-line-max {
+ 
+ 
+  height: 2px;
+  background-color: #007bff; /* Change this to your desired bottom line color */
+  display:flex;
+  
+ 
+}

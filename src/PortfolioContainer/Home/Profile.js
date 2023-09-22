@@ -5,11 +5,11 @@ import me from '../../assets/home/my2.jpg'
 
 export default function Profile() {
     return (
-
+      <div className='main-profile-wrapper' data-aos='fade-up'>
         <div className='profile-container'>
             <div className='profile-parent'>
                 <div className='profile-parent-colz-name-tittle-desc'>
-
+                    
                     <div className='colz'>
                         <MDBBtn className='m-1' style={{ backgroundColor: '#3b5998' }} size='sm' href='https://www.facebook.com/thambara.sahassaka'>
                             <MDBIcon fab icon='facebook-f' />
@@ -32,7 +32,7 @@ export default function Profile() {
                     <div className='profile-name'>
                         <span className="primary-text">
                             {" "}
-                            Hello, I'M <h3 className="highlighted-text" >Thambara Sahassaka</h3>
+                            Hello, I'M <h2 className="highlighted-text" >Thambara Sahassaka</h2>
                         </span>
                     </div>
 
@@ -60,8 +60,11 @@ export default function Profile() {
             </div>
 
         </div>
+        <div className="bottom-line-wrapper" >
+            <div classNAme= 'bottom-line-max'></div>
+        </div>
 
-
+</div>
 
     )
 }

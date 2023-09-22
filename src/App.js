@@ -8,6 +8,7 @@ import { useContext} from 'react';
 import { ThemeContext } from './PortfolioContainer/Context';
 import AOS from 'aos';
 import { useEffect } from 'react';
+import ImageList from './test';
 function App() {
 
   const theme = useContext(ThemeContext);
@@ -29,6 +30,7 @@ function App() {
       <AboutMain />
       <ProjectList />
       <Contact />
+      <ImageList />
      
     </div>
   );

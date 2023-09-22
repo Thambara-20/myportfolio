@@ -1,6 +1,6 @@
 import './HighLight.css'
 
-const Project = ({img,link}) => {
+const Highlight = ({img,link}) => {
   return (
     <div className="p">
       <div className="p-browser">
@@ -16,4 +16,4 @@ const Project = ({img,link}) => {
 };
 
 
-export default Project;
+export default Highlight;

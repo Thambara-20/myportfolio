@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Mobile from './Mobile';
 import Web from './Web';
 import './AboutmeMain.css';
-
+import ImageList from '../../test';
 const AboutMain = () => {
   const [activeTab, setActiveTab] = useState('all'); // Set the default active tab to 'all'
 
@@ -11,7 +11,7 @@ const AboutMain = () => {
   };
 
   return (
-    <div>
+    <div data-aos='fade-up'>
       <h2 className="a-title">My Projects</h2>
       <nav className="navbar">
         <ul className="navbar-nav">
@@ -35,7 +35,7 @@ const AboutMain = () => {
           </li>
         </ul>
         {activeTab && (
-          <div className="bottom-line" style={{ left: activeTab === 'all' ? '16%' : activeTab === 'mobile' ? '33.33%' : '50%' }}></div>
+          <div className="bottom-line" style={{ left: activeTab === 'all' ? '40%' : activeTab === 'mobile' ? '45%' : '50%' }}></div>
         )}
       </nav>
 
@@ -43,6 +43,7 @@ const AboutMain = () => {
         <div>
           <Mobile darkMode />
           <Web darkMode />
+          
           {/* Add other project components here if needed */}
         </div>
       )}
