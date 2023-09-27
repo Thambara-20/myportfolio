@@ -19,11 +19,11 @@ export default function Profile() {
                             <MDBIcon fab icon='twitter' />
                         </MDBBtn>
 
-                        <MDBBtn className='m-1' style={{ backgroundColor: '#ac2bac' }} size='sm' href='#'>
+                        <MDBBtn className='m-1' style={{ backgroundColor: '#ac2bac' }} size='sm' href='https://www.instagram.com/thambarasahassaka/'>
                             <MDBIcon fab icon='instagram' />
                         </MDBBtn>
 
-                        <MDBBtn className='m-1' style={{ backgroundColor: '#0082ca' }} size='sm' href=' https://www.linkedin.com/in/thambara-sahassaka-5573701b5'>
+                        <MDBBtn className='m-1' style={{ backgroundColor: '#0082ca' }} size='sm' href='https://www.linkedin.com/in/thambara-sahassaka-5573701b5'>
                             <MDBIcon fab icon='linkedin-in' ></MDBIcon>
                         </MDBBtn>
 
@@ -62,6 +62,7 @@ export default function Profile() {
         </div>
         <div className="bottom-line-wrapper" >
             <div classNAme= 'bottom-line-max'></div>
+            
         </div>
 
 </div>
