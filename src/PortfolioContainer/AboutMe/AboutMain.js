@@ -34,9 +34,7 @@ const AboutMain = () => {
             Web
           </li>
         </ul>
-        {activeTab && (
-          <div className="bottom-line" style={{ left: activeTab === 'all' ? '40%' : activeTab === 'mobile' ? '45%' : '50%' }}></div>
-        )}
+       
       </nav>
 
       {activeTab === 'all' && (

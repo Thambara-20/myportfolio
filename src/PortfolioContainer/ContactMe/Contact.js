@@ -5,6 +5,9 @@ import Email from "../../assets/home/icons/email.png";
 import Address from "../../assets/home/icons/address.png";
 import emailjs from '@emailjs/browser';
 import { ThemeContext } from '../Context';
+import PhoneAndroidIcon from '@mui/icons-material/PhoneAndroid';
+import EmailIcon from '@mui/icons-material/Email';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
 
 
 
@@ -44,17 +47,20 @@ const Contact = () => {
           <h1 className="c-title">Contact me</h1>
           <div className="c-info">
             <div className="c-info-item">
-              <img src={Phone} alt="" className="c-icon" />
+             <PhoneAndroidIcon color="white" size={"3rem"} style={{marginRight:'5px'}}/>
               +94 76 6827280
             </div>
             <div className="c-info-item">
-              <img className="c-icon" src={Email} alt="" />
+              <EmailIcon color="white" size={"3rem"}style={{marginRight:'5px'}} />
               thambara.20@cse.mrt.ac.lk
             </div>
             <div className="c-info-item">
-              <img className="c-icon" src={Address} alt="" />
-              -----------------------------
+              
+            <div className="c-info-item">
+              <LocationOnIcon color="white" size={"3rem"}style={{marginRight:'5px'}} />
+              Hakmana, Matara, Sri Lanka
             </div>
+
           </div>
         </div>
         <div className="c-right">
