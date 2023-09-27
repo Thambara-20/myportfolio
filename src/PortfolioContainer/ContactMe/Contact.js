@@ -8,7 +8,9 @@ import { ThemeContext } from '../Context';
 import PhoneAndroidIcon from '@mui/icons-material/PhoneAndroid';
 import EmailIcon from '@mui/icons-material/Email';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
-
+import GitHub from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import { a } from '@mui/material';
 
 
 
@@ -46,16 +48,31 @@ const Contact = () => {
         <div className="c-left">
           <h1 className="c-title">Contact me</h1>
           <div className="c-info">
-            <div className="c-info-item">
-             <PhoneAndroidIcon color="white" size={"3rem"} style={{marginRight:'5px'}}/>
+
+            <a className='contactIcon'href='' style={{color:darkMode? 'white':'black'}}>
+             <div className="c-info-item">
+             <PhoneAndroidIcon color="white" size={"4rem"} style={{marginRight:'5px'}}/>
               +94 76 6827280
             </div>
+            </a>
+            <a className='contactIcon' href ='' style={{color:darkMode? 'white':'black'}}>
             <div className="c-info-item">
-              <EmailIcon color="white" size={"3rem"}style={{marginRight:'5px'}} />
+              <EmailIcon color="white" size={"4rem"}style={{marginRight:'5px'}} />
               thambara.20@cse.mrt.ac.lk
             </div>
+            </a>
+            <a className='contactIcon' href ='https://github.com/Thambara-20' style={{color:darkMode? 'white':'black'}}>
             <div className="c-info-item">
-              
+              <GitHub color="white" size={"4rem"}style={{marginRight:'5px'}} />
+            https://github.com/Thambara-20
+            </div>
+            </a>
+            <a className='contactIcon'href = 'linkedin.com/in/thambara-sahassaka-5573701b5' style={{color:darkMode? 'white':'black'}}>
+            <div className='c-info-item'>
+              <LinkedInIcon color="white" size={"4rem"}style={{marginRight:'5px'}} />
+            linkedin.com/in/thambara-sahassaka-5573701b5
+            </div>
+            </a>
             <div className="c-info-item">
               <LocationOnIcon color="white" size={"3rem"}style={{marginRight:'5px'}} />
               Hakmana, Matara, Sri Lanka

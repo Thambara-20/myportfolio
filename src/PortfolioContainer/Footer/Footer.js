@@ -10,7 +10,7 @@ const Footer = () => {
     <div className="footer">
      
       <div className="f-content">
-        <span>thambarasahassaka@gmail.com</span>
+        <span style={{fontSize:20}}>thambarasahassaka@gmail.com</span>
         <div className="f-icons">
           <InstagramIcon color="white" size={"3rem"} />
           <FacebookIcon color="white" size={"3rem"} />
