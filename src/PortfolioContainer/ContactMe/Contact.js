@@ -68,7 +68,7 @@ const Contact = () => {
             <textarea style={{ backgroundColor: darkMode && "#333" }} rows="5" placeholder="Message" name="message" />
             <div style={{ alignItems: 'center', padding: '20px', display: 'flex' }}>
               
-              <button type ="submit" style={{width:'100%'}}class="btn btn-success"> {done ? "send again":"Send"}</button>
+              <button type ="submit" style={{width:'100%', backgroundColor:'#0099ff'}} class="btn btn-secondary"> {done ? "send again":"Send"}</button>
        
             </div>
           </form>
