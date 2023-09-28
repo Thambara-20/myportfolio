@@ -18,7 +18,7 @@ const Mobile = () => {
         <div>
             <div className="a">
                 <div className="main-image-wrapper" data-aos='fade-up'>
-                    <div className="image-wrapper" >
+                    <div className="image-wrapper" style={{ boxShadow: '0px 0px 10px 0px rgba(0,0,0,0.75)',margin:'16px 16px 16px 16px'}} >
                         <div className="image-main">
                             <img src={strpoints_p1} alt="" className="img-item" />
                         </div> 
@@ -36,7 +36,7 @@ const Mobile = () => {
                                 to manage and access library resources. </p>
                         </div>
                     </div>
-                    <div className="image-wrapper" >
+                    <div className="image-wrapper" style={{ boxShadow: '0px 0px 10px 0px rgba(0,0,0,0.75)',margin:'16px 16px 16px 16px'}}>
                         <div className="image-main">
                             <img src={strpoints_p1} alt="" className="img-item" />
                         </div>
@@ -46,14 +46,14 @@ const Mobile = () => {
                             <Chip label="FireBase" color="primary"  style={{ marginRight: '8px' }}/>
                             <AndroidIcon  className="icon-android" fontSize="large" />
                         </div>
-                        <div className="project-textline">Talk Together (in progress)</div>
+                        <div className="project-textline" >Talk Together (in progress)</div>
                         <div className="intro-box" style ={{ backgroundColor: darkMode ? "#333" : 'white',opacity:'0.9' }}>
                             <p>This Application is designed to facilitate communication between individuals who speak different languages.
                                 Its primary purpose is to break down language barriers
                                 and enable users to have meaningful conversations regardless of their native languages. </p>
                         </div>
                     </div>
-                    <div className="image-wrapper" >
+                    <div className="image-wrapper" style={{ boxShadow: '0px 0px 10px 0px rgba(0,0,0,0.75)',margin:'16px 16px 16px 16px'}}>
 
                         <div className="image-main">
                             <img src={strpoints_p1} alt="" className="img-item" />
@@ -73,7 +73,7 @@ const Mobile = () => {
                         </div>
                         
                     </div>
-                    <div className="image-wrapper" >
+                    <div className="image-wrapper" style={{ boxShadow: '0px 0px 10px 0px rgba(0,0,0,0.75)',margin:'16px 16px 16px 16px'}}>
                         <div className="image-main">
                             <img src={strpoints_p1} alt="" className="img-item" />
                         </div>

@@ -1,15 +1,18 @@
 .p {
     width: 30%;
     height: 40vh;
-    margin: 20px 10px;
-    border: 2px solid rgb(243, 242, 242);
+    margin: 20px 10px 20px 10px;
+    border: 2px solid rgb(111, 111, 111);
     border-radius: 10px 10px 0px 0px;
     overflow: hidden;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
   }
   
   .p-browser {
     height: 20px;
-    background-color: rgb(243, 242, 242);
+    background-color: rgb(163, 163, 163);
     display: flex;
     align-items: center;
     position: sticky;
@@ -35,7 +38,7 @@
   
   @media screen and (max-width: 821px) {
     .p {
-      width: 100%;
+      width: 90%;
       height: 40vh;
     }
   }

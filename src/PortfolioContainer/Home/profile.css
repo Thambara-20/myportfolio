@@ -1,19 +1,19 @@
 .main-profile-wrapper{
+ 
     display:flex;
     flex-direction:column;
     align-items:center;
-   
     justify-content:center;
 }
 
 
 .profile-container{
-    margin-top: 30px;
+    top:10px;
+    margin-top: 35px;
     display:flex;
     padding: 19px 25px 0px 25px;
-    height: 95vh;
-    
-}
+    height: 100%;
+    }
 
 
 
@@ -23,12 +23,12 @@
     align-items: center;
     justify-content: center;
     
-   
-}
+   }
 
 
 .profile-parent-colz-name-tittle-desc{
-    padding: 15px;
+    margin-top: 10px;
+    padding: 25px;
     height: 50%;
     display: flex;
     flex-direction: column;
@@ -39,12 +39,16 @@
 
 
 .tittle{
+    bottom: 10px;
     height: 30px;
     font-size: 40;
     overflow: hidden;
     display: flex;
+    width: 100%;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+    justify-content: center;
   
 }
 
@@ -53,6 +57,8 @@
     animation: move 8s ease-in-out infinite alternate  ;
     align-items: center;
     text-align: center;
+    justify-content: space-between;
+   
 }
 
 @keyframes move {
@@ -73,24 +79,25 @@
     color:  #007bff;
     display: flex;
     align-items: center;
+
 }
 
 
 .highlighted-text{
-   
-    font-weight: bold;
-   
- }
+       font-weight: bold;
+    }
 
 
  
 .profile-picture{
     display: flex;
-    flex: 1;
+    flex: 0.8;
     position: relative;
     border-radius: 50%;
     align-items: center;
     justify-content: center;
+ 
+   
     
 }
 
@@ -98,33 +105,35 @@
 
 .img{
    
-    top:7px;
+ 
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
     object-fit: cover;
-    width: 60%;
-    height: 60%;
+    width: 70%;
+    height: 70%;
     border-radius: 50%;
     position: relative;
+    border-bottom: 3px solid #007bff;
     
   
   }
 
 
   .img:hover {
+
     transform: scale(1.07) !important;
     transition: 1s ease-out !important;
 
 }
 .i-bg {
-    
-   
+
     width: 100%;
     height: 100%;
     position: absolute;
     top: 10;
     right: 0;
+    
   }
   
-
 
 
   @media screen and (max-width: 821px) {
@@ -142,12 +151,19 @@
       height: 100%;
     }
      
-.img{
-    width: 80%;
-    height: 80%;
+
+.profile-picture{
+    display: flex;
+    flex: 1;
+    position: relative;
+    border-radius: 50%;
+    margin-top: 10px;
+ 
+    
 }
+
   
-    .description{
+.description{
       display: none;
     }
 

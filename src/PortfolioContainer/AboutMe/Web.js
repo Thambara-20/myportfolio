@@ -15,16 +15,16 @@ const Web = () => {
 
                
                 <div className="main-image-wrapper" data-aos='fade-up'>
-                    <div className="image-wrapper" >
+                    <div className="image-wrapper" style={{ boxShadow: '0px 0px 10px 0px rgba(0,0,0,0.75)',margin:'16px 16px 16px 16px'}} >
                         <div className="image-main">
                             <img src={computer} alt="" className="img-item" />
                         </div>
                         <div style={{ display: 'flex', width: '100%', alignItems: 'center', justifyContent: 'center' }}>
                             <Chip label="ReactJS" color="secondary" style={{ marginRight: '8px' }} />
-                            <Chip label="NodeJS" color="success" style={{ marginRight: '8px' }} />
+                            <Chip label="Node" color="success" style={{ marginRight: '8px' }} />
                             <Chip label="PostgreSQL" color="primary" style={{ marginRight: '8px' }}/
                             >
-                            <Chip label="ExpressJS" color="primary" />
+                            <Chip label="Express" color="primary" />
                             <LaptopWindowsIcon  className="icon-web" fontSize="large" />
                         </div>
                         <div className="project-textline"> Library Management System Web </div>
@@ -35,16 +35,16 @@ const Web = () => {
                                 to manage and access library resources. </p>
                         </div>
                     </div>
-                    <div className="image-wrapper" >
+                    <div className="image-wrapper" style={{ boxShadow: '0px 0px 10px 0px rgba(0,0,0,0.75)',margin:'16px 16px 16px 16px'}} >
                         <div className="image-main">
                             <img src={computer} alt="" className="img-item" />
                             <LaptopWindowsIcon  className="icon-web" fontSize="large" />
                         </div>
                         <div style={{ display: 'flex', width: '100%', alignItems: 'center', justifyContent: 'center' }}>
                             <Chip label="ReactJS" color="secondary" style={{ marginRight: '8px' }} />
-                            <Chip label="NodeJS" color="success" style={{ marginRight: '8px' }} />
+                            <Chip label="Node" color="success" style={{ marginRight: '8px' }} />
                             <Chip label="MongoDB" color="primary" style={{ marginRight: '8px' }}/>
-                            <Chip label="ExpressJS" color="primary" />
+                            <Chip label="Express" color="primary" />
                         </div>
                         <div className="project-textline">The Artist Web (in progress)</div>
                         <div className="intro-box" style ={{ backgroundColor: darkMode ? "#333" : 'white',opacity:'0.9' }}>
@@ -54,7 +54,7 @@ const Web = () => {
                                 visual art comes alive, providing an exclusive platform for artists and buyers to connect,</p>
                         </div>
                     </div>
-                    <div className="image-wrapper" >
+                    <div className="image-wrapper"style={{ boxShadow: '0px 0px 10px 0px rgba(0,0,0,0.75)',margin:'16px 16px 16px 16px'}} >
                         <div className="image-main">
                             <img src={computer} alt="" className="img-item" />
                             <LaptopWindowsIcon  className="icon-web" fontSize="large" />

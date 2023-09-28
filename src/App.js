@@ -82,7 +82,7 @@ function App() {
       <Toggle />
       {/* Navigation bar */}
 
-      <div style={{ position: 'fixed', left: 10, top: 10, width: '10%', zIndex: '1000', fontWeight: 700 }}> My@Portfolio</div>
+      <div style={{ position: 'fixed', left: 10, top: 10, width: '3%', zIndex: '1000', fontWeight: 600, fontSize:'100%' }}> @TS</div>
       <Button
         style={{
 
@@ -103,7 +103,7 @@ function App() {
       </Button>
       <nav
         style={{
-          top: isNavVisible ? '0' : '-45px',
+          top: isNavVisible ? '0' : '-70px',
           right: '0',
           position: 'fixed',
           zIndex: 900,
@@ -113,7 +113,7 @@ function App() {
           width: '100%',
           height: '65px',
           transition: 'top 0.5s ease',
-          backgroundColor: darkMode ? 'rgba(0, 0, 0, 0.5)' : 'rgba(255, 255, 255, 0.5)',
+          backgroundColor: darkMode ? 'rgba(0, 0, 0, 0.5)' : 'rgba(0, 94, 255, 0.5)',
           backdropFilter: 'blur(10px)',
         }}
       >
@@ -131,13 +131,13 @@ function App() {
           color: darkMode ? '#a9c2d1' : 'black',
           justifyContent: 'flex-end', // Horizontal list
           listStyle: 'none', // Remove the dots
-          padding: '12px 105px 15px 15px',
+          padding: '12px 105px 15px 1px',
           fontSize: '200', // Remove default padding
         }}
       >
         <li
           style={{
-            marginRight: '15px', // Add spacing between items
+            marginRight: '10px', // Add spacing between items
             cursor: 'pointer', // Add cursor style
           }}
           onClick={() => scrollToRef(profileRef)}
@@ -146,7 +146,7 @@ function App() {
         </li>
         <li
           style={{
-            marginRight: '15px', // Add spacing between items
+            marginRight: '10px', // Add spacing between items
             cursor: 'pointer', // Add cursor style
           }}
           onClick={() => scrollToRef(aboutRef)}

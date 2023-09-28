@@ -69,7 +69,9 @@
       
       .project-textline {
         margin-top: 5px;
+        margin-bottom: 6px;
         font-weight: 700;
+        height: 50px;
         text-align: center;
         width: 75%;
       }

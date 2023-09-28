@@ -20,9 +20,9 @@ const Footer = () => {
     }}>
 
       <div className="f-content">
-        <span style={{ fontSize: 15, color: darkMode ? 'white' : 'black' }}>thambarasahassaka@gmail.com</span>
+        <span style={{ fontSize: '130%', color: darkMode ? 'white' : 'black' }}>thambarasahassaka@gmail.com</span>
         <div className="f-bottom">
-          <span className="f-copy" style={{ fontSize: 15, color: darkMode ? 'white' : 'black' }}>
+          <span className="f-copy" style={{ fontSize: '130%', color: darkMode ? 'white' : 'black' }}>
             © 2023 Thambara Sahassaka. All rights reserved.
           </span>
         </div>
