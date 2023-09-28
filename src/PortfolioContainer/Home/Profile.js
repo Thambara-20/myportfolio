@@ -1,7 +1,7 @@
 import React from 'react'
 import { MDBBtn, MDBIcon } from 'mdb-react-ui-kit';
 import './profile.css'
-import me from '../../assets/home/my2.jpg'
+import me from '../../assets/profile.jpg'
 
 export default function Profile() {
     return (
@@ -32,7 +32,7 @@ export default function Profile() {
                     <div className='profile-name'>
                         <span className="primary-text">
                             {" "}
-                            Hello, I'M <h2 className="highlighted-text" >Thambara Sahassaka</h2>
+                            Hello, I'M <h1 className="highlighted-text" >Thambara Sahassaka</h1>
                         </span>
                     </div>
 
