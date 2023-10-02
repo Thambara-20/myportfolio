@@ -75,12 +75,11 @@ const Web = () => {
                         <div className="project-textline">Meta Exams(in progress)</div>
                         <div className="intro-box" style ={{ backgroundColor: darkMode ? "#333" : 'white',opacity:'0.9' }}>
                             <p> Meta Learning is an innovative online learning platform designed to empower Sri 
-                                Lankan citizens with accessible and personalized education. This platform, Meta Exams, 
+                                Lankan citizens with accessible and personalized education. This platform 
                                 offers a comprehensive online exams system where students with subscriptions can take exams, 
-                                review their results, track their progress, and access a wide range of features including exam search, 
-                                recommendations, subscription gifting, billing history, notifications, offline access, and social integration.
-                                 Meta Learning aims to revolutionize education in Sri
-                                 Lanka by providing a user-friendly, inclusive, and feature-rich online learning experience.</p>
+                                review their results, track their progress, and access a wide range of features including exam search and 
+                                recommendations.
+                                </p>
                         </div>
                     </div>
                 </div>

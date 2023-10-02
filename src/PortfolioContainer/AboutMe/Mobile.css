@@ -50,12 +50,16 @@
         align-items: center;
         justify-content: center;
         width: 93%;
+        min-width: 370px;
       }
       
       .img-item {
         display: flex;
         align-items: center;
         width: 100%;
+        min-height: 250px;
+        
+        min-width: 370px;
         border-radius: 15px 0px 15px 3px;
         border-width: 1px;
         border-style: solid;
@@ -87,7 +91,7 @@
         padding: 5px 15px 5px 15px;
         transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out; /* Added opacity transition */
         border-width: 1px;
-        border-style: solid;
+      
         position: absolute; /* Added absolute positioning */
          top: 0; /* Position it at the bottom of the .image-wrapper */
         left: 0; /* Align it to the left */
