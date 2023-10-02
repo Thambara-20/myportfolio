@@ -136,8 +136,7 @@ body, h1, h2, p, ul{
   }
   
 .bottom-line {
-    position: absolute;
-    bottom: 0;
+    
     height: 2px;
     background-color: #007bff; /* Change this to your desired bottom line color */
     transition: all 0.3s ease;

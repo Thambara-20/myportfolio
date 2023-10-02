@@ -2,12 +2,14 @@ import "./Mobile.css"
 // import mobile from "../../assets/home/mobile-application.avif"
 // import Button from 'react-bootstrap/Button';
 import{React,useContext} from 'react'
-import strpoints_p1 from "../../assets/home/student-849825_1280.jpg"
+import strpoints_p1 from "../../assets/mobile/Star-D.png"
+import talk from "../../assets/mobile/Talk.png"
 // import strpoints_p2 from "../../assets/home/projects/Star-Points-2.jpg"
 // import strpoints_p3 from "../../assets/home/projects/Star-Points-3.jpg"
 import Chip from '@mui/material/Chip';
 import { ThemeContext } from '../Context';
 import AndroidIcon from '@mui/icons-material/Android';
+import GitHub from "@mui/icons-material/GitHub";
 
 const Mobile = () => {
     const theme = useContext(ThemeContext);
@@ -27,6 +29,9 @@ const Mobile = () => {
                             <Chip label="Dart" color="secondary" style={{ marginRight: '8px' }} />
                             <Chip label="FireBase" color="primary"  style={{ marginRight: '8px' }} />
                             <AndroidIcon  className="icon-android" fontSize="large" />
+                            <a href="https://github.com/ChadmiRatnayake/Library-Management-System-Mobile">
+                            <GitHub  className="icon-github" fontSize="large" />
+                            </a>
                         </div>
                         <div className="project-textline">Library Management System Mobile (in progress)</div>
                         <div className="intro-box" style ={{ backgroundColor: darkMode ? "#333" : 'white',opacity:'0.9' }}>
@@ -38,7 +43,7 @@ const Mobile = () => {
                     </div>
                     <div className="image-wrapper" style={{ boxShadow: '0px 0px 10px 0px rgba(0,0,0,0.75)',margin:'16px 16px 16px 16px'}}>
                         <div className="image-main">
-                            <img src={strpoints_p1} alt="" className="img-item" />
+                            <img src={talk} alt="" className="img-item" />
                         </div>
                         <div style={{ display: 'flex', width: '100%', alignItems: 'center', justifyContent: 'center' }}>
                             <Chip label="Flutter" color="secondary" style={{ marginRight: '8px' }} />
@@ -81,15 +86,16 @@ const Mobile = () => {
                             <Chip label="Flutter" color="secondary" style={{ marginRight: '8px' }} />
                             <Chip label="Dart" color="secondary" style={{ marginRight: '8px' }} />
                             <Chip label="FireBase" color="primary"  style={{ marginRight: '8px' }}/>
+                            <a href="https://github.com/Thambara-20/Star-D-Points">
+                            <GitHub  className="icon-github" fontSize="large" />
+                            </a>
                             <AndroidIcon  className="icon-android" fontSize="large" />
                         </div>
-                        <div className="project-textline">Star Points Radeem Application (in progress)</div>
+                        <div className="project-textline">Donate D points (in progress)</div>
                         <div className="intro-box" style ={{ backgroundColor: darkMode ? "#333" : 'white',opacity:'0.9' }}>
                             <p>a cutting-edge project currently in progress. This innovative application is
                                 designed to revolutionize the way you redeem your hard-earned rewards and
-                                benefits. Whether you've been accumulating points through loyalty programs,
-                                credit card rewards, or other incentives, our application is your key to
-                                unlocking a world of exciting possibilities. With an intuitive interface and seamless
+                                benefits. With an intuitive interface and seamless
                                 functionality, the Application empowers you to effortlessly redeem your accumulated rewards for a wide range of offerings</p>
                         </div>
                     </div>

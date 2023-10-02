@@ -4,6 +4,8 @@ import "./Aboutweb.css"
 import Chip from '@mui/material/Chip';
 import { ThemeContext } from '../Context';
 import LaptopWindowsIcon from '@mui/icons-material/LaptopWindows';
+import GitHub from '@mui/icons-material/GitHub';
+import art from "../../assets/web/Art.png"
 
 const Web = () => {
     const theme = useContext(ThemeContext);
@@ -22,9 +24,11 @@ const Web = () => {
                         <div style={{ display: 'flex', width: '100%', alignItems: 'center', justifyContent: 'center' }}>
                             <Chip label="ReactJS" color="secondary" style={{ marginRight: '8px' }} />
                             <Chip label="Node" color="success" style={{ marginRight: '8px' }} />
-                            <Chip label="PostgreSQL" color="primary" style={{ marginRight: '8px' }}/
-                            >
-                            <Chip label="Express" color="primary" />
+                            <Chip label="PostgreSQL" color="primary" style={{ marginRight: '8px' }}/>
+                            <Chip label="Express" color="primary" style={{ marginRight: '8px' }}/>
+                            <a href="https://github.com/Thambara-20/Library-Management-System-Web">
+                            <GitHub  className="icon-github" fontSize="large" />
+                            </a>
                             <LaptopWindowsIcon  className="icon-web" fontSize="large" />
                         </div>
                         <div className="project-textline"> Library Management System Web </div>
@@ -37,14 +41,17 @@ const Web = () => {
                     </div>
                     <div className="image-wrapper" style={{ boxShadow: '0px 0px 10px 0px rgba(0,0,0,0.75)',margin:'16px 16px 16px 16px'}} >
                         <div className="image-main">
-                            <img src={computer} alt="" className="img-item" />
+                            <img src={art} alt="" className="img-item" />
                             <LaptopWindowsIcon  className="icon-web" fontSize="large" />
                         </div>
                         <div style={{ display: 'flex', width: '100%', alignItems: 'center', justifyContent: 'center' }}>
                             <Chip label="ReactJS" color="secondary" style={{ marginRight: '8px' }} />
                             <Chip label="Node" color="success" style={{ marginRight: '8px' }} />
                             <Chip label="MongoDB" color="primary" style={{ marginRight: '8px' }}/>
-                            <Chip label="Express" color="primary" />
+                            <Chip label="Express" color="primary" style={{ marginRight: '8px' }}/>
+                            <a href="https://github.com/Thambara-20/ArtWeb-E">
+                            <GitHub  className="icon-github" fontSize="large" />
+                            </a>
                         </div>
                         <div className="project-textline">The Artist Web (in progress)</div>
                         <div className="intro-box" style ={{ backgroundColor: darkMode ? "#333" : 'white',opacity:'0.9' }}>
@@ -63,6 +70,7 @@ const Web = () => {
                             <Chip label="Flutter" color="secondary" style={{ marginRight: '8px' }} />
                             <Chip label="Dart" color="secondary" style={{ marginRight: '8px' }} />
                             <Chip label="FireBase" color="primary" />
+                           
                         </div>
                         <div className="project-textline">Meta Exams(in progress)</div>
                         <div className="intro-box" style ={{ backgroundColor: darkMode ? "#333" : 'white',opacity:'0.9' }}>
