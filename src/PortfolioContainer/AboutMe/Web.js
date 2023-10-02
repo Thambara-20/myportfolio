@@ -21,7 +21,7 @@ const Web = () => {
                         <div className="image-main">
                             <img src={computer} alt="" className="img-item" />
                         </div>
-                        <div style={{ display: 'flex', width: '100%', alignItems: 'center', justifyContent: 'center' }}>
+                        <div style={{ display: 'flex', width: '90%', alignItems: 'center', justifyContent: 'center' }}>
                             <Chip label="ReactJS" color="secondary" style={{ marginRight: '8px' }} />
                             <Chip label="Node" color="success" style={{ marginRight: '8px' }} />
                             <Chip label="PostgreSQL" color="primary" style={{ marginRight: '8px' }}/>
@@ -44,7 +44,7 @@ const Web = () => {
                             <img src={art} alt="" className="img-item" />
                             <LaptopWindowsIcon  className="icon-web" fontSize="large" />
                         </div>
-                        <div style={{ display: 'flex', width: '100%', alignItems: 'center', justifyContent: 'center' }}>
+                        <div style={{ display: 'flex', width: '98%', alignItems: 'center', justifyContent: 'center' }}>
                             <Chip label="ReactJS" color="secondary" style={{ marginRight: '8px' }} />
                             <Chip label="Node" color="success" style={{ marginRight: '8px' }} />
                             <Chip label="MongoDB" color="primary" style={{ marginRight: '8px' }}/>
@@ -66,7 +66,7 @@ const Web = () => {
                             <img src={computer} alt="" className="img-item" />
                             <LaptopWindowsIcon  className="icon-web" fontSize="large" />
                         </div>
-                        <div style={{ display: 'flex', width: '100%', alignItems: 'center', justifyContent: 'center' }}>
+                        <div style={{ display: 'flex', width: '98%', alignItems: 'center', justifyContent: 'center' }}>
                             <Chip label="Flutter" color="secondary" style={{ marginRight: '8px' }} />
                             <Chip label="Dart" color="secondary" style={{ marginRight: '8px' }} />
                             <Chip label="FireBase" color="primary" />
