@@ -40,7 +40,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="c">
+    <div className="c" data-aos='fade-up'>
      
       <div className="c-bg"></div>
       <div className="c-wrapper">

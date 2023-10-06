@@ -12,7 +12,7 @@
   }
   
   .p-browse {
-    height: 15px;
+    height: 18px;
     color: rgb(14, 13, 13);
     background-color: black;
     margin-bottom: 0;
@@ -42,7 +42,7 @@
   
   @media screen and (max-width: 821px) {
     .p {
-      width: 80%;
-      height: 45vh;
+      width: 90%;
+      height: 35vh;
     }
   }

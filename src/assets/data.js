@@ -17,7 +17,7 @@ export const Projects = [
     {
       id: 3,
       img: art1,
-      desc: "started Art-WEb E",
+      desc: "started Art-Web E",
     },
    
   ];
