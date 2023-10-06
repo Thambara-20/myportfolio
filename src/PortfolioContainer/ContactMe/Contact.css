@@ -147,3 +147,9 @@ textarea {
 
 
 }
+
+@media screen and (max-width: 390px) {
+  .c {
+    min-height: 100vh;
+  }
+}
