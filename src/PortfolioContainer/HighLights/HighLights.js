@@ -1,17 +1,21 @@
 import Highlight from './HighLight/HighLight.js'
 import './HighLights.css'
-import { React, useEffect } from 'react'
+import { React, useContext, useEffect } from 'react'
 import AOS from 'aos';
 import { Projects } from '../../assets/data'
 import { Button } from '@mui/material';
+import { ThemeContext } from '../Context.js';
 
 const ProjectList = () => {
+    const theme = useContext(ThemeContext);
+    const darkMode = theme.state.darkMode;
     useEffect(() => {
         AOS.init({
             duration: 3000,
         });
     }, []);
     return (
+       
         <div className='highlights-wrapper' data-aos='fade-up'>
             <div className="bottom-line-wrapper">
 
@@ -33,7 +37,15 @@ const ProjectList = () => {
                 </div>
 
             </div>
-            
+            <a href="https://thambara-20.github.io/ArtWeb-E/" data-aos='fade-up' style={{ textDecoration: 'none' }}>
+                <div style={{ marginBottom: '10px' }} >
+                    want to see my web ?
+                </div>
+                <Button className='web-app-button' style={{ backgroundColor: darkMode ? 'white' : 'grey' ,color: !darkMode ? 'white' : 'black', borderRadius: 50, padding: '10px 40px 10px 40px' }}>
+                    See Art Web-E
+                </Button>
+            </a>
+
 
         </div>
     )

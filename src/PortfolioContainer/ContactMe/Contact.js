@@ -42,11 +42,7 @@ const Contact = () => {
 
   return (
     <div className="c">
-      {/* <a href=""  data-aos='fade-up'>
-        <Button className='web-app-button'style={{ backgroundColor:darkMode? 'white':'black', borderRadius: 50, padding: '10px 40px 10px 40px' }}>
-          See Art Web-E
-        </Button>
-      </a> */}
+     
       <div className="c-bg"></div>
       <div className="c-wrapper">
         <div className="c-left">

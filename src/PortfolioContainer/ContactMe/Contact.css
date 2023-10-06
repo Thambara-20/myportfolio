@@ -90,24 +90,12 @@ textarea {
 
 }
 
-.web-app-button{
-  
-  height: 50px;
-  transition: transform 0.5s ease ease-in-out;
-  margin-top: 20px;
-}
-.web-app-button:hover{
-  background-color: #ffffff;
-  transform: scale(1.1);
-  color: #000000;
-  border: 2px solid #000000;
-}
 
 
 @media screen and (max-width: 900px) {
   .c {
     
-    min-height: 80vh;
+    min-height: 100vh;
   
   }
   
