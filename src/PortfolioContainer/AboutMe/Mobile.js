@@ -4,6 +4,7 @@ import "./Mobile.css"
 import{React,useContext} from 'react'
 import strpoints_p1 from "../../assets/mobile/Star-D.png"
 import talk from "../../assets/mobile/Talk.png"
+import lbms from "../../assets/mobile/LBMS.png"
 // import strpoints_p2 from "../../assets/home/projects/Star-Points-2.jpg"
 // import strpoints_p3 from "../../assets/home/projects/Star-Points-3.jpg"
 import Chip from '@mui/material/Chip';
@@ -22,7 +23,7 @@ const Mobile = () => {
                 <div className="main-image-wrapper" data-aos='fade-up'>
                     <div className="image-wrapper" style={{ boxShadow: '0px 0px 10px 0px rgba(0,0,0,0.75)',margin:'16px 16px 16px 16px'}} >
                         <div className="image-main">
-                            <img src={strpoints_p1} alt="" className="img-item" />
+                            <img src={lbms} alt="" className="img-item" />
                         </div> 
                         <div style={{ display: 'flex', width: '100%', alignItems: 'center', justifyContent: 'center' }}>
                             <Chip label="Flutter" color="secondary" style={{ marginRight: '8px' }} />
@@ -51,7 +52,7 @@ const Mobile = () => {
                             <Chip label="FireBase" color="primary"  style={{ marginRight: '8px' }}/>
                             <AndroidIcon  className="icon-android" fontSize="large" />
                         </div>
-                        <div className="project-textline" >Talk Together (in progress)</div>
+                        <div className="project-textline" >Talk Together (under phase one)</div>
                         <div className="intro-box" style ={{ backgroundColor: darkMode ? "#333" : 'white',opacity:'0.9' }}>
                             <p>This Application is designed to facilitate communication between individuals who speak different languages.
                                 Its primary purpose is to break down language barriers

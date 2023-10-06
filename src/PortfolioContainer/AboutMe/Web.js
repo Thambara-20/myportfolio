@@ -55,7 +55,7 @@ const Web = () => {
                             <GitHub  className="icon-github" fontSize="large" />
                             </a>
                         </div>
-                        <div className="project-textline">The Artist Web (in progress)</div>
+                        <div className="project-textline">The Art-Web E (in progress)</div>
                         <div className="intro-box" style ={{ backgroundColor: darkMode ? "#333" : 'white',opacity:'0.9' }}>
                             <p>Art Selling Web Application is an immersive digital gallery that serves as a premier
                                  destination for art enthusiasts, collectors, and appreciators of paintings and drawings.
