@@ -4,7 +4,7 @@ import { ThemeContext } from '../../Context';
 
 
 
-const Highlight = ({ img, link, descryption = 'smd,a' }) => {
+const Highlight = ({ img, link, desc = 'smd,a' }) => {
   const theme = useContext(ThemeContext);
   const darkMode = theme.state.darkMode;
   return (
@@ -16,8 +16,8 @@ const Highlight = ({ img, link, descryption = 'smd,a' }) => {
           <div className="p-circle"></div>
           <div className="p-circle"></div>
         </div>
-        <div className="descript-box" style={{ backgroundColor: darkMode ? 'white' : 'grey', width: '100%', opacity: 0.8,height:'250px' }}>
-          <p className="descript-text" >{descryption}</p>
+        <div className="descript-box" style={{ backgroundColor: darkMode ? 'white' : 'grey', width: '100%', opacity: 0.9,height:'150px' }}>
+          <p className="descript-text" style={{fontWeight:700}}>{desc}</p>
         </div>
 
 
