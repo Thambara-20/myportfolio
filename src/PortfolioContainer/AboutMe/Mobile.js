@@ -5,6 +5,7 @@ import{React,useContext} from 'react'
 import strpoints_p1 from "../../assets/mobile/Star-D.png"
 import talk from "../../assets/mobile/Talk.png"
 import lbms from "../../assets/mobile/LBMS.png"
+import health from "../../assets/mobile/health.png"
 // import strpoints_p2 from "../../assets/home/projects/Star-Points-2.jpg"
 // import strpoints_p3 from "../../assets/home/projects/Star-Points-3.jpg"
 import Chip from '@mui/material/Chip';
@@ -62,7 +63,7 @@ const Mobile = () => {
                     <div className="image-wrapper" style={{ boxShadow: '0px 0px 10px 0px rgba(0,0,0,0.75)',margin:'16px 16px 16px 16px'}}>
 
                         <div className="image-main">
-                            <img src={strpoints_p1} alt="" className="img-item" />
+                            <img src={health} alt="" className="img-item" />
                             <AndroidIcon  className="icon-android" fontSize="large" />
                           
                         </div>

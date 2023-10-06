@@ -38,7 +38,7 @@ const ProjectList = () => {
 
             </div>
             <a href="https://thambara-20.github.io/ArtWeb-E/" data-aos='fade-up' style={{ textDecoration: 'none' }}>
-                <div style={{ marginBottom: '10px' }} >
+                <div style={{ marginBottom: '10px',color: darkMode ? 'white' : 'black' }} >
                     want to see my web ?
                 </div>
                 <Button className='web-app-button' style={{ backgroundColor: darkMode ? 'white' : 'grey' ,color: !darkMode ? 'white' : 'black', borderRadius: 50, padding: '10px 40px 10px 40px' }}>
