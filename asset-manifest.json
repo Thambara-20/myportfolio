@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "./static/css/main.bf9003f4.css",
-    "main.js": "./static/js/main.9cbfd583.js",
+    "main.css": "./static/css/main.5ebb42f1.css",
+    "main.js": "./static/js/main.7c1c87ae.js",
     "static/js/787.28cb0dcd.chunk.js": "./static/js/787.28cb0dcd.chunk.js",
     "static/media/Art.jpg": "./static/media/Art.e523f2d4a74bc3c82f23.jpg",
     "static/media/profile.jpg": "./static/media/profile.83f3106894e7a27f74e5.jpg",
     "static/media/c1.jpg": "./static/media/c1.e80d830c462b2275653b.jpg",
     "static/media/background.jpg": "./static/media/background.967aed0f90dd82c27519.jpg",
     "static/media/Art.png": "./static/media/Art.09d181e452fc28d7fc0e.png",
+    "static/media/health.png": "./static/media/health.2ad6e9ad23ab702e61be.png",
     "static/media/LBMS.png": "./static/media/LBMS.130919019387685057c0.png",
     "static/media/Meta.png": "./static/media/Meta.c6ad0aca85eb1fac6317.png",
     "static/media/Talk.png": "./static/media/Talk.4f87e36145df51e24f0b.png",
@@ -28,12 +29,12 @@
     "static/media/fa-v4compatibility.ttf": "./static/media/fa-v4compatibility.c6a0c95b0a95c4553700.ttf",
     "static/media/fa-v4compatibility.woff2": "./static/media/fa-v4compatibility.1bac2991f3dbfa237aec.woff2",
     "index.html": "./index.html",
-    "main.bf9003f4.css.map": "./static/css/main.bf9003f4.css.map",
-    "main.9cbfd583.js.map": "./static/js/main.9cbfd583.js.map",
+    "main.5ebb42f1.css.map": "./static/css/main.5ebb42f1.css.map",
+    "main.7c1c87ae.js.map": "./static/js/main.7c1c87ae.js.map",
     "787.28cb0dcd.chunk.js.map": "./static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bf9003f4.css",
-    "static/js/main.9cbfd583.js"
+    "static/css/main.5ebb42f1.css",
+    "static/js/main.7c1c87ae.js"
   ]
 }
