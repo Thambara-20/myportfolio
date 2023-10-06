@@ -15,7 +15,7 @@ const Footer = () => {
   return (
     <div className="footer" style={{
       background: darkMode
-        ? 'linear-gradient(to right, #102634, #1057ff)'
+        ? 'linear-gradient(to right, rgb(0, 60, 120), rgb(76, 76, 76))'
         : 'linear-gradient(to right, #516780, #ebebeb)'
     }}>
 
