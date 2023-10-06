@@ -6,6 +6,8 @@ import { ThemeContext } from '../Context';
 import LaptopWindowsIcon from '@mui/icons-material/LaptopWindows';
 import GitHub from '@mui/icons-material/GitHub';
 import art from "../../assets/web/Art.png"
+import lbms from "../../assets/web/LBMS.png"
+import meta from "../../assets/web/Meta.png"
 
 const Web = () => {
     const theme = useContext(ThemeContext);
@@ -19,7 +21,7 @@ const Web = () => {
                 <div className="main-image-wrapper" data-aos='fade-up'>
                     <div className="image-wrapper" style={{ boxShadow: '0px 0px 10px 0px rgba(0,0,0,0.75)',margin:'16px 16px 16px 16px'}} >
                         <div className="image-main">
-                            <img src={computer} alt="" className="img-item" />
+                            <img src={lbms} alt="" className="img-item" />
                         </div>
                         <div style={{ display: 'flex', width: '90%', alignItems: 'center', justifyContent: 'center' }}>
                             <Chip label="ReactJS" color="secondary" style={{ marginRight: '8px' }} />
@@ -63,7 +65,7 @@ const Web = () => {
                     </div>
                     <div className="image-wrapper"style={{ boxShadow: '0px 0px 10px 0px rgba(0,0,0,0.75)',margin:'16px 16px 16px 16px'}} >
                         <div className="image-main">
-                            <img src={computer} alt="" className="img-item" />
+                            <img src={meta} alt="" className="img-item" />
                             <LaptopWindowsIcon  className="icon-web" fontSize="large" />
                         </div>
                         <div style={{ display: 'flex', width: '98%', alignItems: 'center', justifyContent: 'center' }}>
