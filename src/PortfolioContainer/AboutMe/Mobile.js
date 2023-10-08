@@ -93,7 +93,7 @@ const Mobile = () => {
                             </a>
                             <AndroidIcon  className="icon-android" fontSize="large" />
                         </div>
-                        <div className="project-textline">Donate D points (in progress)</div>
+                        <div className="project-textline">Donate D points</div>
                         <div className="intro-box" style ={{ backgroundColor: darkMode ? "#333" : 'white',opacity:'0.9' }}>
                             <p>a cutting-edge project currently in progress. This innovative application is
                                 designed to revolutionize the way you redeem your hard-earned rewards and
