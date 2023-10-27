@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.custom-badge {
+  background-color: red !important; /* Change background color to red */
+  color: white; /* Change text color to white */
+  font-size: 1.5rem;
+  padding: 5; /* Increase font size (adjust the value as needed) */
+  /* You can add more custom styles here */
+}
+.icon-android{
+  color: #006302 !important;
+  position:absolute;
+  top:10px;
+  right:14px;
+  background-color: #000000;
+  border-radius: 2px;
+  box-shadow: 0px 0px 5px 0px #000000;
+}
+
+.icon-web{
+  color:#004ddd;
+  position:absolute;
+  top:15px;
+  right:15px ;
+  background-color: #000000;
+  border-radius: 2px;
+  box-shadow: 0px 0px 5px 0px #000000;
+
+}
+
+.bottom-line-wrapper{
+  height: 2px;
+  margin-bottom:10px;
+  margin-top:20px;
+  display:flex;
+  background-color: #007bff;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  width:90%
+}
+.bottom-line-max {
+ 
+ 
+  height: 2px;
+  background-color: #007bff; /* Change this to your desired bottom line color */
+  display:flex;
+  
+ 
+}

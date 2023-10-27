@@ -1,0 +1,158 @@
+.a {
+   
+    display: flex;
+    flex-direction: column;
+    
+ 
+   
+}
+
+ 
+.head-title {
+   
+    padding: 15px 20px 20px 20px;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+
+.a-sub{
+    padding: 25px;
+    height:3px;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-image-wrapper{
+   
+    display: flex;
+    width: 90%;
+  
+    flex-wrap: wrap;
+    justify-content: center;
+  
+}
+    .image-wrapper {
+        display: flex;
+        flex-direction: column;
+        margin: 5px;
+        max-width: 450px;
+      
+        border-radius: 15px 0px 15px 1px;
+        align-items: center;
+        position: relative; 
+        transition: transform 0.2s ease-in-out;
+        /* Added position relative */
+      }
+    .image-wrapper:hover{
+      transform: scale(1.05);
+    }
+      
+      .image-main {
+        margin: 15px 5px 15px 5px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        width: 93%;
+       
+        max-width: 400px;
+      }
+      
+      .img-item {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        border-radius: 15px 0px 15px 3px;
+        border-width: 1px;
+        border-style: solid;
+        transition: transform 0.2s ease-in-out;
+      }
+      
+      
+      
+      .project-textline {
+        margin-top: 5px;
+        margin-bottom: 6px;
+        font-weight: 700;
+        height: 50px;
+        text-align: center;
+        width: 75%;
+      }
+     
+      .intro-box {
+        justify-content: center;
+        align-items: center;
+        margin-top: 0px;
+        border-radius: 15px 0px 15px 0px;
+        max-height: 0;
+        overflow: hidden;
+        width: 100%;
+        padding: 5px 15px 5px 15px;
+        transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out; /* Added opacity transition */
+        border-width: 1px;
+      
+        position: absolute; /* Added absolute positioning */
+        top: 0; /* Position it at the bottom of the .image-wrapper */
+        left: 0; /* Align it to the left */
+        right: 0; /* Align it to the right */
+         /* Set background color to match your background */
+      }
+      
+      .image-wrapper:hover .intro-box {
+        max-height: 300px;
+        opacity: 1; /* Show the intro-box */
+      }
+      
+
+@media screen and (max-width: 900px) {
+  .a{ flex-direction: column;}
+
+  .main-img-wrapper{
+    padding: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 95%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  
+ }
+ .a-left{
+    display: none;
+ }
+ 
+    
+ }
+
+ 
+@media screen and (max-width: 450px) {
+
+.image-wrapper{
+ min-width: 380px;
+}
+.img-item{
+ max-width: 350px;
+ max-height: 240px;
+}
+   
+
+}
+
+@media screen and (max-width: 400px) {
+
+  .image-wrapper{
+   max-width: 300px !important;
+  }
+  .img-item{
+   max-width: 340px;
+   max-height: 280px;
+  }
+     
+  
+  }

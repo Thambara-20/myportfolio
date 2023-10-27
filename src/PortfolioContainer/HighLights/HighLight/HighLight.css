@@ -1,0 +1,48 @@
+.p {
+    width: 30%;
+    height: 45vh;
+    margin: 20px 10px 20px 10px;
+    border: 2px solid rgb(111, 111, 111);
+    border-radius: 10px 10px 0px 0px;
+    overflow: hidden;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+  }
+  
+  .p-browse {
+    height: 18px;
+    color: rgb(14, 13, 13);
+    background-color: black;
+    margin-bottom: 0;
+    border-bottom: 0;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    z-index: 2;
+  }
+  
+  .p-circle {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    margin: 3px;
+    background-color: white;
+  }
+  
+  .p-img {
+    width: 100%;
+    transition: all 1s ease;
+  }
+  
+  .p:hover .p-img {
+    transform: translateY(-10%);
+  }
+  
+  @media screen and (max-width: 821px) {
+    .p {
+      width: 90%;
+      height: 35vh;
+    }
+  }
