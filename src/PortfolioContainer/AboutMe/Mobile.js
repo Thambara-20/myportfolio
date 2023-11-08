@@ -35,7 +35,7 @@ const Mobile = () => {
                             <GitHub  className="icon-github" fontSize="large" />
                             </a>
                         </div>
-                        <div className="project-textline">Library Management System Mobile (in progress)</div>
+                        <div className="project-textline">Library Management System Mobile </div>
                         <div className="intro-box" style ={{ backgroundColor: darkMode ? "#333" : 'white',opacity:'0.9' }}>
                             <p> The mobile version of The web Application of LBMS, which is also designed to streamline the operations of a library,
                                 making it efficient and user-friendly.

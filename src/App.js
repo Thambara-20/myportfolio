@@ -37,7 +37,7 @@ function App() {
     window.scrollTo({ top: ref.current.offsetTop, behavior: 'smooth' });
   };
 
-  const [isNavVisible, setIsNavVisible] = useState(false);
+  const [isNavVisible, setIsNavVisible] = useState(true);
 
   // Function to toggle the navbar visibility
   const toggleNav = () => {
