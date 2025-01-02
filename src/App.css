@@ -1,6 +1,3 @@
-.App {
-  text-align: center;
-}
 
 .App-logo {
   height: 40vmin;
@@ -37,3 +34,24 @@
   }
 }
 
+
+:root {
+  --icon-color-light: #000000; /* Black for light mode */
+  --icon-color-dark: #ffffff;  /* White for dark mode */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --icon-color: var(--icon-color-dark);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --icon-color: var(--icon-color-light);
+  }
+}
+
+svg {
+  fill: var(--icon-color);
+}

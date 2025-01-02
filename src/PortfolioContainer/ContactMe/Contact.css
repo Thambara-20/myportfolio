@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  min-height: 110vh;
 
 }
 
@@ -15,8 +14,6 @@
 }
 .contactIcon{
   text-decoration: none !important;
-
-  
 }
 
 .c-wrapper {
@@ -26,6 +23,9 @@
 
 .c-left {
   flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .c-right {
