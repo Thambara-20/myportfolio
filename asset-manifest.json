@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.3daa3589.css",
-    "main.js": "./static/js/main.edb39ff9.js",
+    "main.css": "./static/css/main.febd938d.css",
+    "main.js": "./static/js/main.5f3a00f6.js",
     "static/js/787.28cb0dcd.chunk.js": "./static/js/787.28cb0dcd.chunk.js",
     "static/media/Art.jpg": "./static/media/Art.e523f2d4a74bc3c82f23.jpg",
     "static/media/profile.jpg": "./static/media/profile.83f3106894e7a27f74e5.jpg",
@@ -13,7 +13,6 @@
     "static/media/Talk.png": "./static/media/Talk.4f87e36145df51e24f0b.png",
     "static/media/Star-D.png": "./static/media/Star-D.b5647eae8275984d5b43.png",
     "static/media/fa-solid-900.ttf": "./static/media/fa-solid-900.d75e3fd1eb12e9bd6655.ttf",
-    "static/media/student-849825_1280.jpg": "./static/media/student-849825_1280.4f1c3023535917e041e1.jpg",
     "static/media/medium.png": "./static/media/medium.a200c7747a86469bef92.png",
     "static/media/fa-brands-400.ttf": "./static/media/fa-brands-400.016b4a6cdced82ab3aa1.ttf",
     "static/media/fa-solid-900.woff2": "./static/media/fa-solid-900.b6879d41b0852f01ed5b.woff2",
@@ -26,12 +25,12 @@
     "static/media/fa-v4compatibility.ttf": "./static/media/fa-v4compatibility.c6a0c95b0a95c4553700.ttf",
     "static/media/fa-v4compatibility.woff2": "./static/media/fa-v4compatibility.1bac2991f3dbfa237aec.woff2",
     "index.html": "./index.html",
-    "main.3daa3589.css.map": "./static/css/main.3daa3589.css.map",
-    "main.edb39ff9.js.map": "./static/js/main.edb39ff9.js.map",
+    "main.febd938d.css.map": "./static/css/main.febd938d.css.map",
+    "main.5f3a00f6.js.map": "./static/js/main.5f3a00f6.js.map",
     "787.28cb0dcd.chunk.js.map": "./static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3daa3589.css",
-    "static/js/main.edb39ff9.js"
+    "static/css/main.febd938d.css",
+    "static/js/main.5f3a00f6.js"
   ]
 }
