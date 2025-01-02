@@ -9,6 +9,7 @@ import { ThemeContext } from "./PortfolioContainer/Context";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { SkillsSection } from "./PortfolioContainer/Skills/Skills";
+import Career from "./PortfolioContainer/Timeline/Timeline";
 
 const Wrapper = styled.div`
   background-color: ${(props) => (props.darkMode ? "#121212" : "#f9f9f9")};
@@ -171,6 +172,7 @@ function App() {
       </ScrollButton>
       <Section ref={profileRef}>
         <Profile />
+        <Career />
       </Section>
       <Section ref={aboutRef}>
         <AboutMain />
