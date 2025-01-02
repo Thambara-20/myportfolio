@@ -6,6 +6,7 @@ import { OpenInNew } from "@mui/icons-material";
 import lbms from "../../assets/web/LBMS.png";
 import art from "../../assets/web/Art.png";
 import meta from "../../assets/web/Meta.png";
+import { Title } from "../../styles";
 
 const WebContainer = styled.div`
   padding: 2rem;
@@ -20,18 +21,9 @@ const WebContainer = styled.div`
 const SectionTitle = styled.div`
   text-align: center;
   margin-bottom: 2rem;
-
-  h1 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: ${(props) => (props.darkMode ? "#ffffff" : "#333333")};
-    margin-bottom: 0.5rem;
-  }
-
   p {
     font-size: 1rem;
     color: ${(props) => (props.darkMode ? "#cccccc" : "#555555")};
-    margin-top: 0.5rem;
   }
 `;
 
@@ -160,7 +152,7 @@ const Web = () => {
   return (
     <WebContainer darkMode={darkMode}>
       <SectionTitle darkMode={darkMode}>
-        <h1>Web Projects</h1>
+        <Title darkMode={darkMode}>Web Projects</Title>
         <p>
           Explore some of my featured projects showcasing my web development
           skills.

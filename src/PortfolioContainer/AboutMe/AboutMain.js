@@ -1,53 +1,101 @@
-import React, { useState } from 'react';
-import Mobile from './Mobile';
-import Web from './Web';
-import './AboutmeMain.css';
-import ImageList from '../../test';
+import React, { useState } from "react";
+import Mobile from "./Mobile";
+import Web from "./Web";
+import styled from "styled-components";
+
+const AboutMainContainer = styled.div`
+  padding: 2rem;
+  text-align: center;
+`;
+
+const Title = styled.h2`
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #333;
+`;
+
+const Navbar = styled.nav`
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+  background-color: #f9f9f9;
+  padding: 10px 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+`;
+
+const NavbarNav = styled.ul`
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+`;
+
+const NavItem = styled.li`
+  font-size: 1rem;
+  font-weight: 500;
+  color: ${(props) => (props.active ? "#0099ff" : "#555")};
+  margin-right: 2rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: #007bff;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+`;
+
+const TabContent = styled.div`
+  margin-top: 2rem;
+`;
+
 const AboutMain = () => {
-  const [activeTab, setActiveTab] = useState('all'); // Set the default active tab to 'all'
+  const [activeTab, setActiveTab] = useState("all"); // Default active tab: 'all'
 
   const handleTabChange = (tab) => {
     setActiveTab(tab);
   };
 
   return (
-    <div data-aos='fade-up'>
-      <h2 className="a-title">My Projects</h2>
-      <nav className="navbar">
-        <ul className="navbar-nav">
-          <li
-            className={`nav-item ${activeTab === 'all' ? 'active' : ''}`}
-            onClick={() => handleTabChange('all')}
+    <AboutMainContainer>
+      <Title>My Projects</Title>
+      <Navbar>
+        <NavbarNav>
+          <NavItem
+            active={activeTab === "all"}
+            onClick={() => handleTabChange("all")}
           >
             All
-          </li>
-          <li
-            className={`nav-item ${activeTab === 'mobile' ? 'active' : ''}`}
-            onClick={() => handleTabChange('mobile')}
+          </NavItem>
+          <NavItem
+            active={activeTab === "mobile"}
+            onClick={() => handleTabChange("mobile")}
           >
             Mobile
-          </li>
-          <li
-            className={`nav-item ${activeTab === 'web' ? 'active' : ''}`}
-            onClick={() => handleTabChange('web')}
+          </NavItem>
+          <NavItem
+            active={activeTab === "web"}
+            onClick={() => handleTabChange("web")}
           >
             Web
-          </li>
-        </ul>
-       
-      </nav>
-
-      {activeTab === 'all' && (
-        <div>
-          <Mobile darkMode />
-          <Web darkMode />
-          
-          {/* Add other project components here if needed */}
-        </div>
-      )}
-      {activeTab === 'mobile' && <Mobile darkMode />}
-      {activeTab === 'web' && <Web darkMode />}
-    </div>
+          </NavItem>
+        </NavbarNav>
+      </Navbar>
+      <TabContent>
+        {activeTab === "all" && (
+          <>
+            <Mobile />
+            <Web />
+          </>
+        )}
+        {activeTab === "mobile" && <Mobile />}
+        {activeTab === "web" && <Web />}
+      </TabContent>
+    </AboutMainContainer>
   );
 };
 
