@@ -65,6 +65,8 @@ const NavItem = styled.li`
     color: ${(props) => (props.darkMode ? "#66b2ff" : "#0056b3")};
     transform: scale(1.1);
   }
+  @media (max-width: 768px) {
+    font-size: 0.8rem;
 `;
 
 const Section = styled.section`
@@ -173,9 +175,9 @@ function App() {
       <Section ref={aboutRef}>
         <AboutMain />
         <ProjectList />
+        <SkillsSection />
       </Section>
       <Section ref={contactRef}>
-        <SkillsSection />
         <Contact />
       </Section>
     </Wrapper>
