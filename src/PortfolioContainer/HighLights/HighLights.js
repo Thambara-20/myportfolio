@@ -60,7 +60,7 @@ const ProjectList = () => {
       <BottomLineWrapper darkMode={darkMode} />
       <TitleSection darkMode={darkMode}>
         <Title darkMode={darkMode}>Highlights</Title>
-        <p>A showcase of some of the most exciting projects.</p>
+        <p>A showcase of some of the most exciting achievements.</p>
       </TitleSection>
       <HighlightsGrid>
         {Projects.map((item) => (
