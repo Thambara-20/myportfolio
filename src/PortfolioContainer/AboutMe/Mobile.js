@@ -12,8 +12,14 @@ import { Title } from "../../styles";
 
 const MobileContainer = styled.div`
   padding: 2rem;
-  background-color: ${(props) => (props.darkMode ? "#121212" : "#f9f9f9")};
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   color: ${(props) => (props.darkMode ? "#ffffff" : "#333333")};
+  @media (max-width: 768px) {
+    padding: 0.5rem;
+  }
 `;
 
 const SectionTitle = styled.div`
@@ -29,7 +35,6 @@ const ProjectGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 2rem;
-
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
   }
@@ -99,7 +104,7 @@ const ProjectTitle = styled.h3`
   font-weight: bold;
   text-align: center;
   color: ${(props) => (props.darkMode ? "#ffffff" : "#333333")};
-  margin: 0.5rem 0;
+  margin: 0.5rem 0.5rem;
 `;
 
 const ProjectDescription = styled.div`

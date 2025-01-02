@@ -11,6 +11,9 @@ const Wrapper = styled.div`
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem 1rem;
+  @media (max-width: 768px) {
+    padding: 0.5rem;
+  }
 `;
 
 const BottomLineWrapper = styled.div`

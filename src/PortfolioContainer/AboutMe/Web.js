@@ -16,6 +16,9 @@ const WebContainer = styled.div`
   align-items: center;
   background-color: ${(props) => (props.darkMode ? "#121212" : "#f9f9f9")};
   color: ${(props) => (props.darkMode ? "#ffffff" : "#333333")};
+  @media (max-width: 768px) {
+    padding: 0.5rem;
+  }
 `;
 
 const SectionTitle = styled.div`
@@ -106,7 +109,7 @@ const ProjectTitle = styled.h3`
   font-weight: bold;
   text-align: center;
   color: ${(props) => (props.darkMode ? "#ffffff" : "#333333")};
-  margin: 0.5rem 0;
+  margin: 0.5rem 0.5rem;
 `;
 
 const ProjectDescription = styled.div`
