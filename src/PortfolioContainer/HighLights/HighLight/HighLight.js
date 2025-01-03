@@ -22,6 +22,7 @@ const HighlightContainer = styled(motion.div)`
       props.darkMode
         ? "0px 6px 15px rgba(0, 0, 0, 0.7)"
         : "0px 6px 15px rgba(200, 200, 200, 0.7)"};
+    cursor: pointer;
   }
 
   @media screen and (max-width: 821px) {
@@ -69,27 +70,36 @@ const DescriptionBox = styled.div`
   font-weight: bold;
 `;
 
-const Highlight = ({ img, desc = "Description goes here." }) => {
+const Highlight = ({ img, desc = "Description goes here.", link = null }) => {
   const theme = useContext(ThemeContext);
   const darkMode = theme.state.darkMode;
 
+  const Wrapper = link
+    ? styled.a`
+        text-decoration: none;
+        color: inherit;
+      `
+    : styled.div``;
+
   return (
-    <HighlightContainer
-      darkMode={darkMode}
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5 }}
-    >
-      <BrowserBar darkMode={darkMode}>
-        <Circle darkMode={darkMode} />
-        <Circle darkMode={darkMode} />
-        <Circle darkMode={darkMode} />
-      </BrowserBar>
-      <ImageWrapper>
-        <img src={img} alt="Highlight" />
-      </ImageWrapper>
-      <DescriptionBox darkMode={darkMode}>{desc}</DescriptionBox>
-    </HighlightContainer>
+    <Wrapper href={link} target="_blank" rel="noopener noreferrer">
+      <HighlightContainer
+        darkMode={darkMode}
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+      >
+        <BrowserBar darkMode={darkMode}>
+          <Circle darkMode={darkMode} />
+          <Circle darkMode={darkMode} />
+          <Circle darkMode={darkMode} />
+        </BrowserBar>
+        <ImageWrapper>
+          <img src={img} alt="Highlight" />
+        </ImageWrapper>
+        <DescriptionBox darkMode={darkMode}>{desc}</DescriptionBox>
+      </HighlightContainer>
+    </Wrapper>
   );
 };
 

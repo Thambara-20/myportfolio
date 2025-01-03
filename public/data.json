@@ -87,5 +87,25 @@
       "location": "Moratuwa, Sri Lanka",
       "description": "Pursuing a degree in Computer Science and Engineering."
     }
+  ],
+  "highlights": [
+    {
+      "id": 2,
+      "img": "highlights/medium.png",
+      "desc": "A detailed solution for Flutter Gradle build failure",
+      "link": "https://medium.com/@thambarasahassaka/flutter-troubleshooting-firebase-connection-issues-and-gradle-dependencies-51ce188c789e"
+    },
+    {
+      "id": 3,
+      "img": "highlights/poc.png",
+      "desc": "Developed a PoC for whatsapp bot using AWS Lambda and WhatsApp Cloud API",
+      "link": "https://github.com/Thambara-20/wa-business"
+    },
+    {
+      "id": 1,
+      "img": "highlights/pixelai.png",
+      "desc": "Contributed to open source: Flutter Pixel AI",
+      "link": "https://github.com/Thambara-20/flutter-pixel-AI"
+    }
   ]
 }

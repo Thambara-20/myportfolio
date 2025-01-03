@@ -73,9 +73,9 @@ const Web = () => {
                   key={idx}
                   label={tech}
                   color={
-                    tech === "ReactJS"
+                    tech === "React"
                       ? "secondary"
-                      : tech === "Node"
+                      : tech === "Node.js"
                       ? "success"
                       : "primary"
                   }

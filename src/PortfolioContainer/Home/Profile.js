@@ -1,6 +1,5 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
-import me from "../../assets/profile.jpg";
 import { ThemeContext } from "../Context";
 
 const fadeIn = keyframes`
@@ -126,7 +125,7 @@ const ProfilePictureWrapper = styled.div`
   position: relative;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 100%);
   overflow: hidden;
-  background-image: url(${me});
+  background-image: url("profile.jpg");
   background-size: cover;
   background-position: center;
   opacity: 0.6;

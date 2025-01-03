@@ -1,9 +1,7 @@
 import Highlight from "./HighLight/HighLight.js";
 import styled from "styled-components";
-import { useContext, useEffect } from "react";
-import AOS from "aos";
+import { useContext, useEffect, useState } from "react";
 import "aos/dist/aos.css";
-import { Projects } from "../../assets/data";
 import { ThemeContext } from "../Context.js";
 import { Title } from "../../styles.js";
 
@@ -51,11 +49,13 @@ const HighlightsGrid = styled.div`
 const ProjectList = () => {
   const theme = useContext(ThemeContext);
   const darkMode = theme.state.darkMode;
+  const [projects, setProjects] = useState([]);
 
   useEffect(() => {
-    AOS.init({
-      duration: 3000,
-    });
+    fetch("data.json")
+      .then((response) => response.json())
+      .then((data) => setProjects(data.highlights))
+      .catch((error) => console.error("Error fetching projects:", error));
   }, []);
 
   return (
@@ -66,8 +66,13 @@ const ProjectList = () => {
         <p>A showcase of some of the most exciting achievements.</p>
       </TitleSection>
       <HighlightsGrid>
-        {Projects.map((item) => (
-          <Highlight key={item.id} img={item.img} desc={item.desc} />
+        {projects.map((item) => (
+          <Highlight
+            key={item.id}
+            img={item.img}
+            desc={item.desc}
+            link={item.link}
+          />
         ))}
       </HighlightsGrid>
     </Wrapper>
