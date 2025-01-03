@@ -1,11 +1,8 @@
 import styled from "styled-components";
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import { ThemeContext } from "../Context";
 import Chip from "@mui/material/Chip";
 import { OpenInNew } from "@mui/icons-material";
-import lbms from "../../assets/web/LBMS.png";
-import art from "../../assets/web/Art.png";
-import meta from "../../assets/web/Meta.png";
 import { Title } from "../../styles";
 
 const WebContainer = styled.div`
@@ -67,10 +64,12 @@ const ProjectCard = styled.div`
 
 const ProjectImageWrapper = styled.div`
   position: relative;
+  overflow: hidden;
 
   img {
     width: 100%;
-    height: auto;
+    height: 200px; /* Set a fixed height for uniformity */
+    object-fit: cover; /* Ensures images are cropped proportionally */
     border-bottom: ${(props) =>
       props.darkMode ? "1px solid #333333" : "1px solid #eaeaea"};
     transition: transform 0.4s ease-in-out;
@@ -85,16 +84,22 @@ const ProjectImageWrapper = styled.div`
     top: 10px;
     right: 10px;
     color: ${(props) => (props.darkMode ? "#ffffff" : "#333333")};
+    background-color: ${(props) =>
+      props.darkMode ? "rgba(0, 0, 0, 0.6)" : "rgba(255, 255, 255, 0.6)"};
+    border-radius: 50%;
+    padding: 0.3rem;
     cursor: pointer;
     font-size: 1.8rem;
     opacity: 0;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease, transform 0.3s ease;
 
     ${ProjectCard}:hover & {
       opacity: 1;
+      transform: scale(1.2); /* Add a slight zoom effect */
     }
   }
 `;
+
 
 const TechChips = styled.div`
   display: flex;
@@ -124,34 +129,13 @@ const ProjectDescription = styled.div`
 const Web = () => {
   const theme = useContext(ThemeContext);
   const darkMode = theme.state.darkMode;
-
-  const projects = [
-    {
-      title: "Library Management System Web",
-      img: lbms,
-      tech: ["ReactJS", "Node", "PostgreSQL", "Express"],
-      github: "https://github.com/Thambara-20/Library-Management-System-Web",
-      description:
-        "Software solution designed to streamline library operations, making it efficient and user-friendly. It serves as a digital platform for librarians and patrons to manage library resources.",
-    },
-    {
-      title: "The Art-Web E (In Progress)",
-      img: art,
-      tech: ["ReactJS", "Node", "MongoDB", "Express"],
-      github: "https://github.com/Thambara-20/ArtWeb-E",
-      description:
-        "An immersive digital gallery for art enthusiasts and collectors. It connects artists with buyers in a virtual space for showcasing and purchasing paintings and drawings.",
-    },
-    {
-      title: "Meta Exams (In Progress)",
-      img: meta,
-      tech: ["Flutter", "Dart", "Firebase"],
-      github: "https://github.com/Thambara-20/Meta-Exams",
-      description:
-        "Meta Learning is an innovative online learning platform designed to empower Sri Lankan citizens with accessible and personalized education, including online exams and progress tracking.",
-    },
-  ];
-
+  const [projects, setProjects] = useState([]);
+  useEffect(() => {
+    fetch("data.json") 
+      .then((response) => response.json())
+      .then((data) => setProjects(data.projects))
+      .catch((error) => console.error("Error fetching projects:", error));
+  }, []);
   return (
     <WebContainer darkMode={darkMode}>
       <SectionTitle darkMode={darkMode}>

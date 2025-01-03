@@ -103,6 +103,14 @@ const Career = () => {
   const careerData = [
     {
       role: "Associate Software Engineer",
+      organization: "Progress Magic",
+      duration: "May 2024 - Present",
+      location: "Remote",
+      description:
+        "Building scalable and efficient software solutions, contributing to cutting-edge projects in a remote environment.",
+    },
+    {
+      role: "Associate Software Engineer",
       organization: "Fcode Labs Pvt Ltd",
       duration: "May 2024 - Present",
       location: "Remote",

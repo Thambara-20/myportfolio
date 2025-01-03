@@ -1,0 +1,40 @@
+{
+    "projects": [
+      {
+        "title": "Deplora",
+        "img": "/web/deplora.png",
+        "tech": ["TypeScript", "React", "Node.js", "Express"],
+        "github": "https://github.com/Thambara-20/int-deplora-web",
+        "description": "A platform for managing deployment plans, providing users with an intuitive platform to oversee application deployments."
+      },
+      {
+        "title": "Library Management System",
+        "img": "/web/LBMS.png",
+        "tech": ["JavaScript", "React", "Node.js", "PostgreSQL", "Express"],
+        "github": "https://github.com/Thambara-20/Library-Management-System-Web",
+        "description": "A web-based application designed to streamline library operations, providing an efficient platform for managing resources."
+      },
+      {
+        "title": "SPM Agile Assistant Chatbot",
+        "img": "/web/chatbot.png",
+        "tech": ["Python", "Streamlit", "Pinecone", "Google Gemini"],
+        "github": "https://github.com/Thambara-20/spm-agile-assistant-chatbot",
+        "description": "An AI assistant built using Retrieval-Augmented Generation (RAG) to provide intelligent and context-aware answers to Agile-related queries."
+      },
+      {
+        "title": "VoteZone Frontend",
+        "img": "/web/votezone.png",
+        "tech": ["TypeScript", "React", "Node.js", "Express"],
+        "github": "https://github.com/Thambara-20/VoteZone_frontend",
+        "description": "An application to create and manage elections with a clean and intuitive interface."
+      },
+      {
+        "title": "Training Ramp Up",
+        "img": "/web/rampup.png",
+        "tech": ["TypeScript", "React", "Node.js"],
+        "github": "https://github.com/Thambara-20/training-ramp-up",
+        "description": "A full-stack web application designed to manage user and student data. User authentication and authorization are implemented to ensure data security."
+      }
+    ]
+  }
+  
