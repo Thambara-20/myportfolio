@@ -1,40 +1,91 @@
 {
-    "projects": [
-      {
-        "title": "Deplora",
-        "img": "/web/deplora.png",
-        "tech": ["TypeScript", "React", "Node.js", "Express"],
-        "github": "https://github.com/Thambara-20/int-deplora-web",
-        "description": "A platform for managing deployment plans, providing users with an intuitive platform to oversee application deployments."
-      },
-      {
-        "title": "Library Management System",
-        "img": "/web/LBMS.png",
-        "tech": ["JavaScript", "React", "Node.js", "PostgreSQL", "Express"],
-        "github": "https://github.com/Thambara-20/Library-Management-System-Web",
-        "description": "A web-based application designed to streamline library operations, providing an efficient platform for managing resources."
-      },
-      {
-        "title": "SPM Agile Assistant Chatbot",
-        "img": "/web/chatbot.png",
-        "tech": ["Python", "Streamlit", "Pinecone", "Google Gemini"],
-        "github": "https://github.com/Thambara-20/spm-agile-assistant-chatbot",
-        "description": "An AI assistant built using Retrieval-Augmented Generation (RAG) to provide intelligent and context-aware answers to Agile-related queries."
-      },
-      {
-        "title": "VoteZone Frontend",
-        "img": "/web/votezone.png",
-        "tech": ["TypeScript", "React", "Node.js", "Express"],
-        "github": "https://github.com/Thambara-20/VoteZone_frontend",
-        "description": "An application to create and manage elections with a clean and intuitive interface."
-      },
-      {
-        "title": "Training Ramp Up",
-        "img": "/web/rampup.png",
-        "tech": ["TypeScript", "React", "Node.js"],
-        "github": "https://github.com/Thambara-20/training-ramp-up",
-        "description": "A full-stack web application designed to manage user and student data. User authentication and authorization are implemented to ensure data security."
-      }
-    ]
-  }
-  
+  "projects": [
+    {
+      "title": "Deplora",
+      "img": "/web/deplora.png",
+      "tech": ["TypeScript", "React", "Node.js", "Express"],
+      "github": "https://github.com/Thambara-20/int-deplora-web",
+      "description": "A platform for managing deployment plans, providing users with an intuitive platform to oversee application deployments."
+    },
+    {
+      "title": "Library Management System",
+      "img": "/web/LBMS.png",
+      "tech": ["JavaScript", "React", "Node.js", "PostgreSQL", "Express"],
+      "github": "https://github.com/Thambara-20/Library-Management-System-Web",
+      "description": "A web-based application designed to streamline library operations, providing an efficient platform for managing resources."
+    },
+    {
+      "title": "SPM Agile Assistant Chatbot",
+      "img": "/web/chatbot.png",
+      "tech": ["Python", "Streamlit", "Pinecone", "Google Gemini"],
+      "github": "https://github.com/Thambara-20/spm-agile-assistant-chatbot",
+      "description": "An AI assistant built using Retrieval-Augmented Generation (RAG) to provide intelligent and context-aware answers to Agile-related queries."
+    },
+    {
+      "title": "VoteZone Frontend",
+      "img": "/web/votezone.png",
+      "tech": ["TypeScript", "React", "Node.js", "Express"],
+      "github": "https://github.com/Thambara-20/VoteZone_frontend",
+      "description": "An application to create and manage elections with a clean and intuitive interface."
+    },
+    {
+      "title": "Training Ramp Up",
+      "img": "/web/rampup.png",
+      "tech": ["TypeScript", "React", "Node.js"],
+      "github": "https://github.com/Thambara-20/training-ramp-up",
+      "description": "A full-stack web application designed to manage user and student data. User authentication and authorization are implemented to ensure data security."
+    }
+  ],
+  "mobile": [
+    {
+      "title": "Library Management System Mobile",
+      "img": "/mobile/LBMS.png",
+      "tech": ["Flutter", "Dart", "Firebase"],
+      "github": "https://github.com/ChadmiRatnayake/Library-Management-System-Mobile",
+      "description": "The mobile version of the LBMS web application. Designed to streamline library operations, making it efficient and user-friendly. A digital platform for library patrons to manage and access library resources."
+    },
+    {
+      "title": "Talk Together (Phase One)",
+      "img": "/mobile/Talk.png",
+      "tech": ["Flutter", "Dart", "Firebase"],
+      "description": "An application designed to break down language barriers. Enables users to have meaningful conversations regardless of their native languages, fostering better communication."
+    },
+    {
+      "title": "Health Pro Simple Application",
+      "img": "/mobile/tagme.png",
+      "tech": ["Flutter", "Dart", "Firebase"],
+      "github": "https://github.com/Thambara-20/tagme",
+      "description": "An application for Leo Club members in Sri Lanka to mark their own attendance. Admins can create events, track participants' locations, and verify attendance based on user location"
+    },
+    {
+      "title": "Donate D Points",
+      "img": "/mobile/Star-D.png",
+      "tech": ["Flutter", "Dart", "Firebase"],
+      "github": "https://github.com/Thambara-20/Star-D-Points",
+      "description": "An innovative application to redeem rewards and benefits effortlessly. Features an intuitive interface and seamless functionality to manage and utilize accumulated rewards."
+    }
+  ],
+  "career": [
+    {
+      "role": "Associate Software Engineer",
+      "organization": "Fcode Labs Pvt Ltd | Progress Magic",
+      "duration": "May 2024 - Present",
+      "location": "Remote",
+      "description": "Building scalable and efficient software solutions, contributing to cutting-edge projects in a remote environment."
+    },
+    {
+      "role": "Software Engineer Intern",
+      "organization": "Fcode Labs Pvt Ltd",
+      "duration": "Nov 2023 - May 2024",
+      "location": "Nugegoda, Western Province, Sri Lanka",
+      "description": "Contributed to team projects and gained hands-on experience in backend and frontend development."
+    },
+    {
+      "role": "Undergraduate Student",
+      "organization": "University of Moratuwa",
+      "duration": "2021 - Present",
+      "location": "Moratuwa, Sri Lanka",
+      "description": "Pursuing a degree in Computer Science and Engineering."
+    }
+  ]
+}

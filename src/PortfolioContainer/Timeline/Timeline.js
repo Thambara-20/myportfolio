@@ -27,13 +27,6 @@ const CareerWrapper = styled.div`
   animation: ${fadeIn} 1s ease-in-out;
 `;
 
-const SectionTitle = styled.h2`
-  font-size: 2.5rem;
-  font-weight: bold;
-  margin-bottom: 1.5rem;
-  color: ${(props) => (props.darkMode ? "#4da6ff" : "#0056b3")};
-`;
-
 const Timeline = styled.div`
   display: flex;
   flex-direction: column;
@@ -100,40 +93,13 @@ const Career = () => {
   const theme = React.useContext(ThemeContext);
   const darkMode = theme.state.darkMode;
 
-  const careerData = [
-    {
-      role: "Associate Software Engineer",
-      organization: "Progress Magic",
-      duration: "May 2024 - Present",
-      location: "Remote",
-      description:
-        "Building scalable and efficient software solutions, contributing to cutting-edge projects in a remote environment.",
-    },
-    {
-      role: "Associate Software Engineer",
-      organization: "Fcode Labs Pvt Ltd",
-      duration: "May 2024 - Present",
-      location: "Remote",
-      description:
-        "Building scalable and efficient software solutions, contributing to cutting-edge projects in a remote environment.",
-    },
-    {
-      role: "Software Engineer Intern",
-      organization: "Fcode Labs Pvt Ltd",
-      duration: "Nov 2023 - May 2024",
-      location: "Nugegoda, Western Province, Sri Lanka",
-      description:
-        "Contributed to team projects and gained hands-on experience in backend and frontend development.",
-    },
-    {
-      role: "Undergraduate Student",
-      organization: "University of Moratuwa",
-      duration: "2021 - Present",
-      location: "Moratuwa, Sri Lanka",
-      description: "Pursuing a degree in Computer Science and Engineering.",
-    },
-  ];
-
+  const [careerData, setCareerData] = React.useState([]);
+  React.useEffect(() => {
+    fetch("data.json")
+      .then((response) => response.json())
+      .then((data) => setCareerData(data.career))
+      .catch((error) => console.error("Error fetching career data:", error));
+  }, []);
   return (
     <CareerWrapper darkMode={darkMode}>
       <Title darkMode={darkMode}>Experience</Title>

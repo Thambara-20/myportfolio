@@ -1,4 +1,3 @@
-import img1 from "../assets/home/icons/email.png"
 import c1 from "../assets/cyber/c1.jpg"
 
 import medium from "../assets/cyber/medium.png"
