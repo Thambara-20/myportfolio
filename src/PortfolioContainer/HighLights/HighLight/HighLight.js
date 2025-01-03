@@ -69,17 +69,13 @@ const DescriptionBox = styled.div`
   color: ${(props) => (props.darkMode ? "#ffffff" : "#000000")};
   font-weight: bold;
 `;
-
+const Wrapper = styled.a`
+  text-decoration: none;
+  color: inherit;
+`;
 const Highlight = ({ img, desc = "Description goes here.", link = null }) => {
   const theme = useContext(ThemeContext);
   const darkMode = theme.state.darkMode;
-
-  const Wrapper = link
-    ? styled.a`
-        text-decoration: none;
-        color: inherit;
-      `
-    : styled.div``;
 
   return (
     <Wrapper href={link} target="_blank" rel="noopener noreferrer">
