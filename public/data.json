@@ -15,7 +15,7 @@
       "description": "A web-based application designed to streamline library operations, providing an efficient platform for managing resources."
     },
     {
-      "title": "SPM Agile Assistant Chatbot",
+      "title": "Agile Assistant Chatbot",
       "img": "web/chatbot.png",
       "tech": ["Python", "Streamlit", "Pinecone", "Google Gemini"],
       "github": "https://github.com/Thambara-20/spm-agile-assistant-chatbot",
@@ -51,7 +51,7 @@
       "description": "An application designed to break down language barriers. Enables users to have meaningful conversations regardless of their native languages, fostering better communication."
     },
     {
-      "title": "Health Pro Simple Application",
+      "title": "TagMe",
       "img": "mobile/tagme.png",
       "tech": ["Flutter", "Dart", "Firebase"],
       "github": "https://github.com/Thambara-20/tagme",
