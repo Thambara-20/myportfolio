@@ -16,15 +16,17 @@ export const Section = styled(motion.section)`
   overflow: hidden;
   position: relative;
 `;
-
-export const Wrapper = styled(motion.div)`
-  text-align: center;
+export const ContactSection = styled(motion.section)`
+  padding: 4rem 1rem;
   color: ${(props) => (props.darkMode ? "white" : "#333")};
-  background: ${(props) =>
-    props.darkMode
-      ? "linear-gradient(145deg, #121212, #1e1e1e)"
-      : "linear-gradient(145deg, #f9f9f9, #ffffff)"};
+  overflow: hidden;
+  position: relative;
+
+  @media (max-width: 768px) {
+    padding: 0;
+  }
 `;
+
 
 export const ProjectCard = styled.div`
   display: flex;
@@ -47,7 +49,6 @@ export const ProjectCard = styled.div`
         : "0px 6px 20px rgba(200, 200, 200, 0.9)"};
   }
 `;
-
 
 export const ProjectImageWrapper = styled.div`
   position: relative;

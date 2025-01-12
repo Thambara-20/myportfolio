@@ -6,7 +6,7 @@ import { ThemeContext } from "../Context";
 import PhoneAndroidIcon from "@mui/icons-material/PhoneAndroid";
 import EmailIcon from "@mui/icons-material/Email";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
-import { Section, Title } from "../../styles";
+import { ContactSection, Title } from "../../styles";
 import Modal from "react-modal";
 
 const Container = styled.div`
@@ -26,7 +26,7 @@ const ContactWrapper = styled(motion.div)`
   }
 `;
 
-const LeftSection = styled(motion.div)`
+const SubSection = styled(motion.div)`
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -38,21 +38,9 @@ const LeftSection = styled(motion.div)`
     props.darkMode
       ? "0px 4px 10px rgba(0, 0, 0, 0.5)"
       : "0px 4px 10px rgba(200, 200, 200, 0.5)"};
-`;
-
-const RightSection = styled(motion.div)`
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem;
-  border-radius: 12px;
-  background: ${(props) => (props.darkMode ? "#1f1f1f" : "#fff")};
-  box-shadow: ${(props) =>
-    props.darkMode
-      ? "0px 4px 10px rgba(0, 0, 0, 0.5)"
-      : "0px 4px 10px rgba(200, 200, 200, 0.5)"};
+  @media screen and (max-width: 768px) {
+    padding: 0.5rem;
+  }
 `;
 
 const InfoItem = styled(motion.div)`
@@ -135,9 +123,7 @@ const Button = styled(motion.button)`
   border: none;
   border-radius: 12px;
   background-color: ${(props) =>
-    props.disabled
-      ? "rgba(0, 31, 109, 0.3)" 
-      : "rgba(0, 31, 109, 0.73)"};
+    props.disabled ? "rgba(0, 31, 109, 0.3)" : "rgba(0, 31, 109, 0.73)"};
   color: ${(props) =>
     props.disabled
       ? "rgba(255, 255, 255, 0.5)"
@@ -155,7 +141,6 @@ const Button = styled(motion.button)`
   }
 `;
 
-
 const fadeIn = keyframes`
   from {
     opacity: 0;
@@ -171,6 +156,12 @@ const Contact = () => {
   const formRef = useRef();
   const [done, setDone] = useState(false);
   const [feedbackMessage, setFeedbackMessage] = useState("");
+  const [formData, setFormData] = useState({
+    user_name: "",
+    user_email: "",
+    message: "",
+  });
+  const [errors, setErrors] = useState({});
   const theme = useContext(ThemeContext);
   const darkMode = theme.state.darkMode;
   const [showModal, setShowModal] = useState(false);
@@ -183,10 +174,35 @@ const Contact = () => {
     }
   };
 
+  const validateForm = () => {
+    const newErrors = {};
+    if (!formData.user_name.trim()) {
+      newErrors.user_name = "Name is required";
+    }
+    if (!formData.user_email.trim()) {
+      newErrors.user_email = "Email is required";
+    } else if (!/\S+@\S+\.\S+/.test(formData.user_email)) {
+      newErrors.user_email = "Invalid email address";
+    }
+    if (!formData.message.trim()) {
+      newErrors.message = "Message is required";
+    }
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
     if (isSending) return;
+
+    if (!validateForm()) return;
+
     setIsSending(true);
 
     emailjs
@@ -203,6 +219,7 @@ const Contact = () => {
           setFeedbackMessage("Your message has been sent successfully!");
           setIsSending(false);
           setShowModal(true);
+          setFormData({ user_name: "", user_email: "", message: "" });
         },
         (error) => {
           console.log(error.text);
@@ -214,7 +231,7 @@ const Contact = () => {
   };
 
   return (
-    <Section
+    <ContactSection
       darkMode={darkMode}
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
@@ -234,7 +251,7 @@ const Contact = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.5 }}
         >
-          <LeftSection
+          <SubSection
             darkMode={darkMode}
             initial={{ x: -50, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
@@ -247,10 +264,10 @@ const Contact = () => {
               <EmailIcon /> thambara.20@cse.mrt.ac.lk
             </InfoItem>
             <InfoItem darkMode={darkMode}>
-              <LocationOnIcon /> Hakmana, Matara, Sri Lanka
+              <LocationOnIcon /> Matara, Sri Lanka
             </InfoItem>
-          </LeftSection>
-          <RightSection
+          </SubSection>
+          <SubSection
             darkMode={darkMode}
             initial={{ x: 50, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
@@ -262,46 +279,42 @@ const Contact = () => {
                 type="text"
                 placeholder="Name"
                 name="user_name"
-                initial={{ scale: 0.9 }}
-                animate={{ scale: 1 }}
-                transition={{ duration: 0.5 }}
+                value={formData.user_name}
+                onChange={handleInputChange}
+                className={errors.user_name && "error"}
               />
-              <Input
-                darkMode={darkMode}
-                type="text"
-                placeholder="Subject"
-                name="user_subject"
-                initial={{ scale: 0.9 }}
-                animate={{ scale: 1 }}
-                transition={{ duration: 0.5, delay: 0.2 }}
-              />
+              {errors.user_name && (
+                <span className="error-message">{errors.user_name}</span>
+              )}
+
               <Input
                 darkMode={darkMode}
                 type="email"
                 placeholder="Email"
                 name="user_email"
-                initial={{ scale: 0.9 }}
-                animate={{ scale: 1 }}
-                transition={{ duration: 0.5, delay: 0.4 }}
+                value={formData.user_email}
+                onChange={handleInputChange}
+                className={errors.user_email && "error"}
               />
+              {errors.user_email && (
+                <span className="error-message">{errors.user_email}</span>
+              )}
+
               <TextArea
                 darkMode={darkMode}
                 rows="5"
                 placeholder="Message"
                 name="message"
-                initial={{ scale: 0.9 }}
-                animate={{ scale: 1 }}
-                transition={{ duration: 0.5, delay: 0.6 }}
+                value={formData.message}
+                onChange={handleInputChange}
+                className={errors.message && "error"}
               />
-              <Button
-                type="submit"
-                darkMode={darkMode}
-                initial={{ scale: 1 }}
-                whileHover={{ scale: 1.01 }}
-                whileTap={{ scale: 1 }}
-                disabled={isSending}
-              >
-                {done ? "Send Again" : "Send"}
+              {errors.message && (
+                <span className="error-message">{errors.message}</span>
+              )}
+
+              <Button type="submit" darkMode={darkMode} disabled={isSending}>
+                {isSending ? "Sending..." : done ? "Send Again" : "Send"}
               </Button>
             </Form>
             <Modal
@@ -368,10 +381,10 @@ const Contact = () => {
                 </button>
               </div>
             </Modal>
-          </RightSection>
+          </SubSection>
         </ContactWrapper>
       </Container>
-    </Section>
+    </ContactSection>
   );
 };
 

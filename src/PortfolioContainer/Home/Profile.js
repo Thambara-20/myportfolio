@@ -20,7 +20,6 @@ const ProfileWrapper = styled.div`
   justify-content: center;
   height: 100%;
   padding: 1rem 2rem;
-  background-color: ${(props) => (props.darkMode ? "#181818" : "#f4f4f4")};
   color: ${(props) => (props.darkMode ? "#ffffff" : "#333333")};
   animation: ${fadeIn} 1s ease-in-out;
   @media (max-width: 768px) {

@@ -21,14 +21,13 @@ const CareerWrapper = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding: 2rem;
-  background-color: ${(props) => (props.darkMode ? "#181818" : "#f4f4f4")};
+  padding: 4rem;
   color: ${(props) => (props.darkMode ? "#ffffff" : "#333333")};
   animation: ${fadeIn} 1s ease-in-out;
 
     @media (max-width: 768px) {
 
-    padding: 2rem 0.2rem;
+    padding: 3rem 0.2rem;
 `;
 
 const Timeline = styled.div`
