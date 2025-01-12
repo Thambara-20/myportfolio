@@ -6,7 +6,7 @@ import { ThemeContext } from "../Context";
 import PhoneAndroidIcon from "@mui/icons-material/PhoneAndroid";
 import EmailIcon from "@mui/icons-material/Email";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
-import { ContactSection, Title } from "../../styles";
+import { ContactSection, Title, ErrorSpan } from "../../styles";
 import Modal from "react-modal";
 
 const Container = styled.div`
@@ -84,6 +84,11 @@ const Input = styled(motion.input)`
       ? "0px 4px 8px rgba(0, 0, 0, 0.5)"
       : "0px 4px 8px rgba(200, 200, 200, 0.5)"};
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  // error colors
+
+  &.error {
+    border-color: red;
+  }
 
   &:focus {
     box-shadow: ${(props) =>
@@ -107,6 +112,9 @@ const TextArea = styled(motion.textarea)`
       ? "0px 4px 8px rgba(0, 0, 0, 0.5)"
       : "0px 4px 8px rgba(200, 200, 200, 0.5)"};
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  &.error {
+    border-color: red;
+  }
 
   &:focus {
     box-shadow: ${(props) =>
@@ -141,17 +149,6 @@ const Button = styled(motion.button)`
   }
 `;
 
-const fadeIn = keyframes`
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-`;
-
 const Contact = () => {
   const formRef = useRef();
   const [done, setDone] = useState(false);
@@ -174,28 +171,51 @@ const Contact = () => {
     }
   };
 
-  const validateForm = () => {
-    const newErrors = {};
-    if (!formData.user_name.trim()) {
-      newErrors.user_name = "Name is required";
-    }
-    if (!formData.user_email.trim()) {
-      newErrors.user_email = "Email is required";
-    } else if (!/\S+@\S+\.\S+/.test(formData.user_email)) {
-      newErrors.user_email = "Invalid email address";
-    }
-    if (!formData.message.trim()) {
-      newErrors.message = "Message is required";
-    }
-    setErrors(newErrors);
-    return Object.keys(newErrors).length === 0;
-  };
-
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
+    validateField(name, value);
   };
 
+  const validateField = (fieldName, value) => {
+    let error = "";
+
+    switch (fieldName) {
+      case "user_name":
+        if (!value.trim()) {
+          error = "Name is required";
+        }
+        break;
+
+      case "user_email":
+        if (!value.trim()) {
+          error = "Email is required";
+        } else if (!/\S+@\S+\.\S+/.test(value)) {
+          error = "Invalid email address";
+        }
+        break;
+
+      case "message":
+        if (!value.trim()) {
+          error = "Message is required";
+        }
+        break;
+
+      default:
+        break;
+    }
+
+    setErrors((prev) => ({ ...prev, [fieldName]: error }));
+    if (error.length) return error;
+  };
+
+  const validateForm = () => {
+    const e = !Object.entries(formData).some(([key, value]) => {
+      const error = validateField(key, value);
+      return error && error.length;
+    });
+    return e;
+  };
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -282,10 +302,9 @@ const Contact = () => {
                 value={formData.user_name}
                 onChange={handleInputChange}
                 className={errors.user_name && "error"}
+                error={errors.user_name}
               />
-              {errors.user_name && (
-                <span className="error-message">{errors.user_name}</span>
-              )}
+              {errors.user_name && <ErrorSpan>{errors.user_name}</ErrorSpan>}
 
               <Input
                 darkMode={darkMode}
@@ -295,10 +314,9 @@ const Contact = () => {
                 value={formData.user_email}
                 onChange={handleInputChange}
                 className={errors.user_email && "error"}
+                error={errors.user_email}
               />
-              {errors.user_email && (
-                <span className="error-message">{errors.user_email}</span>
-              )}
+              {errors.user_email && <ErrorSpan>{errors.user_email}</ErrorSpan>}
 
               <TextArea
                 darkMode={darkMode}
@@ -308,10 +326,9 @@ const Contact = () => {
                 value={formData.message}
                 onChange={handleInputChange}
                 className={errors.message && "error"}
+                error={errors.message}
               />
-              {errors.message && (
-                <span className="error-message">{errors.message}</span>
-              )}
+              {errors.message && <ErrorSpan>{errors.message}</ErrorSpan>}
 
               <Button type="submit" darkMode={darkMode} disabled={isSending}>
                 {isSending ? "Sending..." : done ? "Send Again" : "Send"}

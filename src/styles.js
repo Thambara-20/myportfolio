@@ -27,7 +27,6 @@ export const ContactSection = styled(motion.section)`
   }
 `;
 
-
 export const ProjectCard = styled.div`
   display: flex;
   flex-direction: column;
@@ -124,4 +123,11 @@ export const TechChips = styled.div`
   justify-content: center;
   gap: 0.5rem;
   margin: 1rem;
+`;
+
+export const ErrorSpan = styled.span`
+  color: red;
+  font-size: 0.8rem;
+  margin-top: 0.1rem;
+  display: block;
 `;
